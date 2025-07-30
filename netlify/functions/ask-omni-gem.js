@@ -1,5 +1,5 @@
 // File: netlify/functions/ask-omni-gem.js
-
+// Final version
 exports.handler = async function(event, context) {
   // These are the CORS headers. They grant permission to your Neocities site.
   const headers = {

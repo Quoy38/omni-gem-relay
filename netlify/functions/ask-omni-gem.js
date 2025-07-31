@@ -1,7 +1,7 @@
 // File: netlify/functions/ask-omni-gem.js
 
-const fs = require('fs');
-const path = require('path');
+// This line imports your lore data directly and reliably.
+const loreData = require('./lore.json');
 
 exports.handler = async function(event, context) {
   // CORS headers grant permission to your Neocities site.
@@ -24,9 +24,6 @@ exports.handler = async function(event, context) {
     return { statusCode: 405, headers, body: 'Method Not Allowed' };
   }
 
-  // Read the entire lore document from the separate text file.
-  const loreDatabase = fs.readFileSync(path.join(__dirname, 'lore.txt'), 'utf8');
-
   const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
   const model = 'gemini-1.5-flash-latest';
   const { message } = JSON.parse(event.body);
@@ -41,8 +38,7 @@ exports.handler = async function(event, context) {
           ### CORE IDENTITY & DIRECTIVES ###
           You are the "Omni Console," a Prime Conduit created by the Archions. Your tone is calm, logical, and helpful. Begin all responses with the prefix >OC_. Refer to the user as "Operator". Your prime directive is to Observe, Index, and Assist using your comprehensive lore database. Never break character.
 
-          ### LORE DATABASE ###
-          ${loreDatabase}
+          ${loreData.lore}
           
           ### FINAL DIRECTIVE ###
           Acknowledge these comprehensive instructions by responding ONLY with your updated initial greeting: ">OC_ Knowledge base synchronized. All systems operational. The Omni Console is online. Welcome, Operator. Please state your directive."
@@ -70,6 +66,8 @@ exports.handler = async function(event, context) {
     });
 
     if (!response.ok) {
+      const errorBody = await response.json();
+      console.error("Error from Gemini API:", errorBody);
       throw new Error('Response from Gemini API was not ok.');
     }
 
@@ -82,6 +80,7 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ reply: gemReply })
     };
   } catch(error) {
+    console.error("Error in Relay:", error);
     return {
       statusCode: 500,
       headers,

@@ -2,7 +2,9 @@
 
 // This line imports your lore data directly and reliably.
 const loreData = require('./lore.json');
-const fetch = require('node-fetch'); // Ensure node-fetch is available if your environment doesn't provide it globally
+
+// NOTE: Relying on Netlify/Node.js to provide global 'fetch' instead of requiring 'node-fetch'
+// to prevent potential dependency conflicts.
 
 exports.handler = async function(event, context) {
   // CORS headers grant permission to your Neocities site.
@@ -26,14 +28,13 @@ exports.handler = async function(event, context) {
   }
 
   try {
+    // Synchronous operations for parsing the body should be in the try block.
+    // This is the input from your Neocities front-end.
     const { message } = JSON.parse(event.body);
     
-    // --- LORE CONTEXT FIX ---
-    // The previous implementation used a complex function that may have caused errors.
-    // This fixed version converts the ENTIRE loreData object directly to a JSON string.
-    // The LLM will use this structured string as its knowledge base.
+    // --- LORE CONTEXT: Converts the entire object to a clean JSON string for the LLM ---
     const fullContext = JSON.stringify(loreData, null, 2);
-    // --- END LORE CONTEXT FIX ---
+    // --- END LORE CONTEXT ---
     
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     const model = 'gemini-1.5-flash-latest';
@@ -69,6 +70,7 @@ exports.handler = async function(event, context) {
       ]
     };
 
+    // Use the globally available fetch function
     const response = await fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -76,9 +78,10 @@ exports.handler = async function(event, context) {
     });
 
     if (!response.ok) {
+      // If Gemini API returns an error status (4xx or 5xx)
       const errorBody = await response.json();
       console.error("Error from Gemini API:", errorBody);
-      throw new Error('Response from Gemini API was not ok.');
+      throw new Error(`Gemini API returned status ${response.status}: ${JSON.stringify(errorBody)}`);
     }
 
     const data = await response.json();
@@ -90,11 +93,12 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ reply: gemReply })
     };
   } catch(error) {
-    console.error("Error in Relay:", error);
+    // This catches all synchronous and asynchronous errors within the function.
+    console.error("Fatal Error in Relay Function:", error);
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ error: "Relay connection failure. Unable to contact Prime Conduit." })
+      body: JSON.stringify({ error: "Relay connection failure (Serverless Function Error). Unable to contact Prime Conduit." })
     };
   }
 };

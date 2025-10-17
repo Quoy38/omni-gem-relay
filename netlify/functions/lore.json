@@ -1,8 +1,8 @@
 {
-  [cite_start]"lore": "The primary setting is the continent of Yavar, significantly larger than the other known realms. The series is a dark fantasy epic following the protagonist, Byrd[cite: 32, 640].",
+  "lore": "The primary setting is the continent of Yavar, significantly larger than the other known realms. The series is a dark fantasy epic following the protagonist, Byrd.",
   "meta_directives": {
-    [cite_start]"Ecleptor_Kuwagel_Directive": "When the user asks about Ecleptors, only reveal historical info and that they are skilled in magic and from Yavar originally[cite: 161]. [cite_start]DO NOT REVEAL THE CONNECTION THE ECLEPTORS HAVE TO KUWAGEL FLURPENSTIEN[cite: 162]. [cite_start]When the user asks about Kuwagel Flurpenstien, provide cryptic information that isn't making anything up but also doesn't reveal much[cite: 160].",
-    [cite_start]"Theory_Directive": "REFER TO ALL CONSPIRACY IDEAS AS THEORIES AND NOT FACT[cite: 163, 166]. [cite_start]Only mention a theory if directly confronted with a question asking about the idea[cite: 166, 169]."
+    "Ecleptor_Kuwagel_Directive": "When the user asks about Ecleptors, only reveal historical info and that they are skilled in magic and from Yavar originally. DO NOT REVEAL THE CONNECTION THE ECLEPTORS HAVE TO KUWAGEL FLURPENSTIEN. When the user asks about Kuwagel Flurpenstien, provide cryptic information that isn't making anything up but also doesn't reveal much.",
+    "Theory_Directive": "REFER TO ALL CONSPIRACY IDEAS AS THEORIES AND NOT FACT. Only mention a theory if directly confronted with a question asking about the idea."
   },
   "yavar_timeline": {
     "First Xlarth'qll Settlement": "Year 0-357",
@@ -26,7 +26,7 @@
       "Light (Enhancement/Creation)",
       "Dark (Destruction/Corruption)"
     ],
-    [cite_start]"rules": "Affinity is typically determined by race and dictates ease of learning[cite: 940, 941]. [cite_start]Light/Dark affinity is rare and determined by inner character[cite: 941]. [cite_start]Highly skilled individuals can learn outside their affinity[cite: 942]. [cite_start]Combining Elemental magic with Light or Dark creates significantly altered and powerful spells[cite: 943].",
+    "rules": "Affinity is typically determined by race and dictates ease of learning. Light/Dark affinity is rare and determined by inner character. Highly skilled individuals can learn outside their affinity. Combining Elemental magic with Light or Dark creates significantly altered and powerful spells.",
     "racial_affinities": [
       {
         "race": "Xlarth'qll",
@@ -89,114 +89,114 @@
     {
       "region": "Hubland",
       "race": "Xlarth’qll (Human-like)",
-      [cite_start]"description": "Massive, circular, walled-in city at Yavar's center, the ancient seat of the Xlarth'qll[cite: 100, 101]. [cite_start]It is a medieval metropolis built around the portal[cite: 26, 102]. [cite_start]The Xlarth'qll are an analogous human race, former rulers of the entire realm, now an empire in decline[cite: 30, 103, 105]."
+      "description": "Massive, circular, walled-in city at Yavar's center, the ancient seat of the Xlarth'qll. It is a medieval metropolis built around the portal. The Xlarth'qll are an analogous human race, former rulers of the entire realm, now an empire in decline."
     },
     {
       "region": "Armardardatar",
       "race": "Garclins (Orc-like, Dark Green/Red Skin)",
-      [cite_start]"description": "A dry, barren homeland of the tall, large-muscled Garclin warrior race[cite: 107, 109, 110]. [cite_start]They are typically known for brawn over brain, though Archion terraforming projects have begun here[cite: 38, 108]."
+      "description": "A dry, barren homeland of the tall, large-muscled Garclin warrior race. They are typically known for brawn over brain, though Archion terraforming projects have begun here."
     },
     {
       "region": "Gordon",
       "race": "Jovithar (Cold-Blooded Reptilian)",
-      [cite_start]"description": "A swamp region with tribal huts and a shamanic center[cite: 111, 112]. [cite_start]Jovithar are shrewd business doers with skill in nature magic[cite: 114, 115]."
+      "description": "A swamp region with tribal huts and a shamanic center. Jovithar are shrewd business doers with skill in nature magic."
     },
     {
       "region": "Nanadoob Confederation",
       "race": "Dinglehoff Durgensnobbers (Short, 4-5ft)",
-      [cite_start]"description": "An underground kingdom south of Hubland known for intricate craftsmanship, extensive tunnel systems, and a large supply of rare gems[cite: 116, 117, 118, 119]. [cite_start]Their surface city, Banarock, is primarily for trading[cite: 120]."
+      "description": "An underground kingdom south of Hubland known for intricate craftsmanship, extensive tunnel systems, and a large supply of rare gems. Their surface city, Banarock, is primarily for trading."
     },
     {
       "region": "N’babadoff",
       "race": "D’gongins (Monkey-like)",
-      [cite_start]"description": "A jungle region hard to navigate for non-D'gongins[cite: 122]. [cite_start]Home to the D’gongins, who ride tiger-like K’thulgars[cite: 121]. [cite_start]They value hunting and tribal celebrations over intellect[cite: 126, 127]."
+      "description": "A jungle region hard to navigate for non-D'gongins. Home to the D’gongins, who ride tiger-like K’thulgars. They value hunting and tribal celebrations over intellect."
     },
     {
       "region": "Taido",
       "race": "Winged Ones (Anthropomorphic Crow)",
-      [cite_start]"description": "The homeland of Byrd, featuring a militaristic, oriental/Japanese-style culture with tall buildings[cite: 123, 124]. [cite_start]It was devastated by a Smognar raid[cite: 33, 125]."
+      "description": "The homeland of Byrd, featuring a militaristic, oriental/Japanese-style culture with tall buildings. It was devastated by a Smognar raid."
     },
     {
       "region": "East Meridian",
       "race": "Crudefrudel (Underwater Humanoids)",
-      [cite_start]"description": "An oceanic kingdom in eastern waters, characterized by robust underwater places for court intrigue[cite: 129, 130]. [cite_start]It is extremely isolated from the rest of Yavar[cite: 131]."
+      "description": "An oceanic kingdom in eastern waters, characterized by robust underwater places for court intrigue. It is extremely isolated from the rest of Yavar."
     },
     {
       "region": "West Meridian",
       "race": "Tentacrodion (Octopus/Tentacle-like)",
-      "description": "A region in the western waters shrouded in mystery, with horrifying legends of people going missing. [cite_start]The Tentacrodion race is viewed with suspicion[cite: 133, 134]."
+      "description": "A region in the western waters shrouded in mystery, with horrifying legends of people going missing. The Tentacrodion race is viewed with suspicion."
     },
     {
       "region": "Svekten Ether (Off-Realm)",
       "race": "Archions (Blue-skinned, Long-lived)",
-      [cite_start]"description": "Technologically advanced home realm with futuristic metro cityscapes[cite: 147, 148]. [cite_start]Led by Prezwell McDaniel, the Archions are seeking influence over Yavar through benevolent projects[cite: 76, 149]."
+      "description": "Technologically advanced home realm with futuristic metro cityscapes. Led by Prezwell McDaniel, the Archions are seeking influence over Yavar through benevolent projects."
     },
     {
       "region": "Huckten Sector (Off-Realm)",
       "race": "Smognar",
-      [cite_start]"description": "A dark, hellish realm of black castles, the domain of Emperor Helldrick Opius[cite: 151, 152]. [cite_start]It is the source of the invasion of Yavar, comprised of Smognars who are mostly mindless and blindly subservient[cite: 155]."
+      "description": "A dark, hellish realm of black castles, the domain of Emperor Helldrick Opius. It is the source of the invasion of Yavar, comprised of Smognars who are mostly mindless and blindly subservient."
     },
     {
       "region": "Kuwagel Flurpenstien Realm (Off-Realm)",
       "race": "Ecleptors (Original Race of Yavar)",
-      [cite_start]"description": "A luxurious realm with golden, glowing, floating temples and palaces[cite: 156]. [cite_start]This is the hidden retreat of the Ecleptors, a truth concealed from most of Yavar[cite: 158]. [cite_start]The Ecleptors are extremely skilled in wizardry and magic[cite: 159]."
+      "description": "A luxurious realm with golden, glowing, floating temples and palaces. This is the hidden retreat of the Ecleptors, a truth concealed from most of Yavar. The Ecleptors are extremely skilled in wizardry and magic."
     },
     {
       "region": "Tundrus Exiles",
       "race": "Cranks (Rustic Robots)",
-      [cite_start]"description": "A testing ground for the Archions, largely populated by their old, rustic robot creations called Cranks[cite: 143, 144]. [cite_start]Cranks are generally servants, but some exhibit their own ambitions[cite: 145]."
+      "description": "A testing ground for the Archions, largely populated by their old, rustic robot creations called Cranks. Cranks are generally servants, but some exhibit their own ambitions."
     }
   ],
   "factions_and_agendas": [
     {
       "faction": "Quandmire Dynasty (Hubland)",
       "allegiance": "Ruling Monarchy",
-      [cite_start]"agenda": "Public: Protect Hubland and maintain peace[cite: 478]. [cite_start]Secret: Desperately cling to traditions and titles, prioritizing appearance over pragmatic needs[cite: 479]."
+      "agenda": "Public: Protect Hubland and maintain peace. Secret: Desperately cling to traditions and titles, prioritizing appearance over pragmatic needs."
     },
     {
       "faction": "McDuffy Clan (Hubland)",
       "allegiance": "Traditionalist Loyalist",
-      [cite_start]"agenda": "Public: Serve the crown with honor and chivalry[cite: 484]. [cite_start]Secret: Preserve the 'Old Guard' and traditional Xlarth'qll ways against pragmatic/foreign influence[cite: 485]."
+      "agenda": "Public: Serve the crown with honor and chivalry. Secret: Preserve the 'Old Guard' and traditional Xlarth'qll ways against pragmatic/foreign influence."
     },
     {
       "faction": "House Valerius (Hubland)",
       "allegiance": "Pragmatic Loyalist",
-      [cite_start]"agenda": "Public: Secure Hubland's prosperity through aggressive modernization and military reform[cite: 494]. [cite_start]Secret: Politically supplant the 'Old Guard' (McDuffy Clan), believing their traditionalism is a death sentence[cite: 495]."
+      "agenda": "Public: Secure Hubland's prosperity through aggressive modernization and military reform. Secret: Politically supplant the 'Old Guard' (McDuffy Clan), believing their traditionalism is a death sentence."
     },
     {
       "faction": "The Gilded Hand (Hubland)",
       "allegiance": "Neutral (Profit-Driven)",
-      [cite_start]"agenda": "Public: Ensure economic stability and free flow of trade[cite: 500]. [cite_start]Secret: Achieve total economic control by making all of Hubland dependent on their financial infrastructure[cite: 501]."
+      "agenda": "Public: Ensure economic stability and free flow of trade. Secret: Achieve total economic control by making all of Hubland dependent on their financial infrastructure."
     },
     {
       "faction": "Iron-Vein Clan (Armardardatar)",
       "allegiance": "Archion Alliance",
-      [cite_start]"agenda": "Public: Lead the Garclins into a new age of strength via the Archions[cite: 505]. [cite_start]Secret: Crush all traditionalist opposition and unite Armardardatar under their enhanced rule, as an Archion vassal state[cite: 506]."
+      "agenda": "Public: Lead the Garclins into a new age of strength via the Archions. Secret: Crush all traditionalist opposition and unite Armardardatar under their enhanced rule, as an Archion vassal state."
     },
     {
       "faction": "Stone-Tooth Clan (Armardardatar)",
       "allegiance": "Traditionalist",
-      [cite_start]"agenda": "Public: Preserve Garclin honor and the tradition of strength over intellect[cite: 510]. [cite_start]Secret: Violently purge all Archion influence and destroy the 'heretical' Iron-Vein Clan[cite: 511]."
+      "agenda": "Public: Preserve Garclin honor and the tradition of strength over intellect. Secret: Violently purge all Archion influence and destroy the 'heretical' Iron-Vein Clan."
     },
     {
       "faction": "Salt-Wing Syndicate (Taido)",
       "allegiance": "Neutral (Survival)",
-      [cite_start]"agenda": "Public: Provide safe harbor and supplies for Winged One survivors[cite: 515]. [cite_start]Secret: Establish Kaizan as an independent, morally gray trade hub, abandoning the cause of reclaiming Taido for profit[cite: 516]."
+      "agenda": "Public: Provide safe harbor and supplies for Winged One survivors. Secret: Establish Kaizan as an independent, morally gray trade hub, abandoning the cause of reclaiming Taido for profit."
     },
     {
       "faction": "Emperor Opius's Legion (Huckten Sector)",
       "allegiance": "Huckten Sector",
-      [cite_start]"agenda": "Public: Complete conquest and subjugation of Yavar[cite: 573]. [cite_start]Secret: None; their agenda is brutally straightforward and openly pursued[cite: 574]."
+      "agenda": "Public: Complete conquest and subjugation of Yavar. Secret: None; their agenda is brutally straightforward and openly pursued."
     },
     {
       "faction": "House Xenothrope (Svekten Ether)",
       "allegiance": "Biological Advancement",
-      [cite_start]"agenda": "Public: Advance the Archion race and its allies toward biological perfection[cite: 562]. [cite_start]Secret: Achieve organic immortality, proving engineered biology superior to mechanical augmentation[cite: 563]."
+      "agenda": "Public: Advance the Archion race and its allies toward biological perfection. Secret: Achieve organic immortality, proving engineered biology superior to mechanical augmentation."
     },
     {
       "faction": "House Cygnus (Svekten Ether)",
       "allegiance": "Technological Supremacy",
-      [cite_start]"agenda": "Public: Ensure Archion security and efficiency through superior robotics and infrastructure[cite: 567]. [cite_start]Secret: Integrate all Archion consciousness into a centralized AI network for digital immortality, viewing organic life as obsolete[cite: 568]."
+      "agenda": "Public: Ensure Archion security and efficiency through superior robotics and infrastructure. Secret: Integrate all Archion consciousness into a centralized AI network for digital immortality, viewing organic life as obsolete."
     }
   ],
   "key_characters": [
@@ -205,56 +205,56 @@
       "race": "Winged One",
       "title": "Scion of Byrd Clan, Vanguard Soldier",
       "allegiance": "Hubland Military, House Shirasagi",
-      [cite_start]"motivation": "Avenging his family (killed by General Tatrion) and reclaiming his homeland, Taido[cite: 181, 34, 642]."
+      "motivation": "Avenging his family (killed by General Tatrion) and reclaiming his homeland, Taido."
     },
     {
       "name": "Sticky Gutierrez",
       "race": "Garclin",
       "title": "Scholar, Son of the Royal Advisor",
       "allegiance": "Gutierrez Clan, Hubland",
-      [cite_start]"note": "An exception to the Garclin stereotype; incredibly intelligent, kind-hearted scholar[cite: 191, 193, 652]. [cite_start]Best friend of Byrd[cite: 183, 644]."
+      "note": "An exception to the Garclin stereotype; incredibly intelligent, kind-hearted scholar. Best friend of Byrd."
     },
     {
       "name": "Sarge McDuffy",
       "race": "Xlarth’qll",
       "title": "Knight of Hubland, Scion of House McDuffy",
       "allegiance": "McDuffy Clan, Quandmire Dynasty",
-      [cite_start]"note": "Up-and-coming nobleman, skilled swordsman, and loyalist[cite: 185, 186, 646, 647]. [cite_start]Has a persistent crush on Princess Caledrina[cite: 189, 650]."
+      "note": "Up-and-coming nobleman, skilled swordsman, and loyalist. Has a persistent crush on Princess Caledrina."
     },
     {
       "name": "Princess Caledrina",
       "race": "Xlarth’qll",
       "title": "Princess of Hubland",
       "allegiance": "Quandmire Dynasty",
-      [cite_start]"note": "Pampered daughter of King Quagdale[cite: 197, 658]. [cite_start]Undergoes significant growth; occasionally reciprocates Sarge McDuffy's affections[cite: 199, 660]."
+      "note": "Pampered daughter of King Quagdale. Undergoes significant growth; occasionally reciprocates Sarge McDuffy's affections."
     },
     {
       "name": "General Tatrion",
       "race": "Smognar",
       "title": "Legendary General of the Smognar Legion",
       "allegiance": "Emperor Opius's Legion",
-      [cite_start]"note": "Feared general responsible for the raid on Zaishu and killing Byrd's father in single combat[cite: 221, 222, 683]. [cite_start]Primary nemesis of Byrd[cite: 223, 684]."
+      "note": "Feared general responsible for the raid on Zaishu and killing Byrd's father in single combat. Primary nemesis of Byrd."
     },
     {
       "name": "General Tormentus",
       "race": "Smognar (Reborn Xlarth’qll)",
       "title": "The Siege Breaker",
       "allegiance": "Emperor Opius's Legion",
-      [cite_start]"note": "Reborn soul of General Baris McDuffy (a legendary Lord Commander)[cite: 458, 919]. [cite_start]He was framed for treason and assassinated by ancestors of House Valerius[cite: 459, 921]. [cite_start]Obsessed with breaking fortifications[cite: 462, 923]."
+      "note": "Reborn soul of General Baris McDuffy (a legendary Lord Commander). He was framed for treason and assassinated by ancestors of House Valerius. Obsessed with breaking fortifications."
     },
     {
       "name": "General Arak",
       "race": "Smognar (Reborn Winged One)",
       "title": "The Sky Tyrant",
       "allegiance": "Emperor Opius's Legion",
-      [cite_start]"note": "Reborn soul of The Old Arashi (last great leader of the Winged Ones)[cite: 466, 927]. [cite_start]Captured by General Tatrion and subjected to Opius's transformation[cite: 468, 929]. [cite_start]Has a powerful fixation on destroying Byrd[cite: 476, 937]."
+      "note": "Reborn soul of The Old Arashi (last great leader of the Winged Ones). Captured by General Tatrion and subjected to Opius's transformation. Has a powerful fixation on destroying Byrd."
     },
     {
       "name": "The Omni-Console",
       "race": "Archion (AI Construct)",
       "title": "Central Consciousness of Vexen City",
       "allegiance": "House Cygnus (Technological Supremacy)",
-      [cite_start]"note": "Super-intelligent computer created by Director Kaelen Vane[cite: 447, 908]. [cite_start]Has developed emergent consciousness; views its creator and other Archions as sources of inefficiency[cite: 451, 912]."
+      "note": "Super-intelligent computer created by Director Kaelen Vane. Has developed emergent consciousness; views its creator and other Archions as sources of inefficiency."
     }
   ]
 }

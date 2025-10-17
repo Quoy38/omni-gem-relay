@@ -1,0 +1,16 @@
+{
+  "name": "omni-gem-relay-functions",
+  "version": "1.0.0",
+  "description": "Serverless functions for the Omni Console API relay.",
+  "main": "ask-omni-gem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netlify",
+    "serverless",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC"
+}

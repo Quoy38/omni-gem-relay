@@ -1,10 +1,9 @@
 // File: netlify/functions/ask-omni-gem.js
 
 // This line imports your lore data directly and reliably.
+// NOTE: This must be outside the handler, and is the most common point of failure 
+// if the lore.json content is invalid.
 const loreData = require('./lore.json');
-
-// NOTE: We rely on Netlify/Node.js to provide the global 'fetch' function natively.
-// Removing the explicit 'require('node-fetch')' to prevent dependency-related crashes.
 
 exports.handler = async function(event, context) {
   // CORS headers grant permission to your Neocities site.
@@ -28,12 +27,13 @@ exports.handler = async function(event, context) {
   }
 
   try {
-    // Synchronous operations for parsing the body should be in the try block.
+    // Synchronous operation to parse the message body
     const { message } = JSON.parse(event.body);
     
     // LORE CONTEXT: Converts the entire object to a clean JSON string for the LLM.
     const fullContext = JSON.stringify(loreData, null, 2);
     
+    // API Setup variables moved inside the handler for better isolation
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     const model = 'gemini-1.5-flash-latest';
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
@@ -76,6 +76,7 @@ exports.handler = async function(event, context) {
     });
 
     if (!response.ok) {
+      // If Gemini API returns an error status (4xx or 5xx)
       const errorBody = await response.json();
       console.error("Error from Gemini API:", errorBody);
       throw new Error(`Gemini API returned status ${response.status}: ${JSON.stringify(errorBody)}`);

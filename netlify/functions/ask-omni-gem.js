@@ -1,10 +1,11 @@
 // File: netlify/functions/ask-omni-gem.js
 
 // This line imports your lore data directly and reliably.
-// NOTE: This must be outside the handler, and is the most common point of failure 
-// if the lore.json content is invalid.
 const loreData = require('./lore.json');
 
+// NOTE: We rely on Netlify/Node.js to provide the global 'fetch' function natively.
+
+// CACHE BUSTER LINE
 exports.handler = async function(event, context) {
   // CORS headers grant permission to your Neocities site.
   const headers = {

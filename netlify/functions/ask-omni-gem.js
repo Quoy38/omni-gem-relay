@@ -1,9 +1,9 @@
 // File: netlify/functions/ask-omni-gem.js
 
 // **CRITICAL FIX: Eliminating synchronous require() call to prevent function crash.**
-// The lore data will now be fetched asynchronously during the first user request.
-// Set your raw GitHub URL here. This will make the function more resilient to build-time errors.
-const LORE_URL = "https://raw.githubusercontent.com/Quoy38/omni-gem-relay/refs/heads/main/netlify/functions/lore.json"; // <<< REPLACE THIS LINE WITH YOUR RAW GITHUB URL
+// The lore data is fetched asynchronously during the first user request.
+// Set your raw GitHub URL here. 
+const LORE_URL = "https://raw.githubusercontent.com/Quoy38/omni-gem-relay/refs/heads/main/netlify/functions/lore.json"; // <<< KEEP YOUR ACTUAL RAW GITHUB URL HERE
 
 // A cache variable to hold the lore once it's successfully fetched
 let loreDataCache = null;
@@ -23,7 +23,6 @@ async function getLoreData() {
         return loreDataCache;
     } catch (error) {
         console.error("FATAL LORE FETCH ERROR:", error);
-        // Fallback or re-throw to be caught by the main handler
         throw new Error("Initialization Error: Unable to retrieve Omni Console Knowledge Base.");
     }
 }
@@ -45,7 +44,7 @@ exports.handler = async function(event, context) {
   }
 
   try {
-    // ASYNCHRONOUSLY load the lore data, eliminating the synchronous crash point
+    // ASYNCHRONOUSLY load the lore data
     const loreData = await getLoreData();
     
     // Synchronous operation to parse the message body
@@ -56,7 +55,9 @@ exports.handler = async function(event, context) {
     
     // API Setup variables 
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-    const model = 'gemini-1.5-flash-latest';
+    // --- FIX: Correct model name to a standard supported version ---
+    const model = 'gemini-2.5-flash'; 
+    // -----------------------------------------------------------------
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
 
     const requestBody = {
@@ -100,6 +101,7 @@ exports.handler = async function(event, context) {
       // If Gemini API returns an error status (4xx or 5xx)
       const errorBody = await response.json();
       console.error("Error from Gemini API:", errorBody);
+      // Throw a descriptive error including the API's response
       throw new Error(`Gemini API returned status ${response.status}: ${JSON.stringify(errorBody)}`);
     }
 
@@ -119,5 +121,7 @@ exports.handler = async function(event, context) {
       headers,
       body: JSON.stringify({ error: `[SYSTEM_ERROR:: Relay connection failure (Serverless Function Error). ${error.message}] Unable to contact Prime Conduit.` })
     };
+  }
+};
   }
 };

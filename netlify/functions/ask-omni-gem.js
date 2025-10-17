@@ -3,8 +3,8 @@
 // This line imports your lore data directly and reliably.
 const loreData = require('./lore.json');
 
-// NOTE: Relying on Netlify/Node.js to provide global 'fetch' instead of requiring 'node-fetch'
-// to prevent potential dependency conflicts.
+// NOTE: We rely on Netlify/Node.js to provide the global 'fetch' function natively.
+// Removing the explicit 'require('node-fetch')' to prevent dependency-related crashes.
 
 exports.handler = async function(event, context) {
   // CORS headers grant permission to your Neocities site.
@@ -29,12 +29,10 @@ exports.handler = async function(event, context) {
 
   try {
     // Synchronous operations for parsing the body should be in the try block.
-    // This is the input from your Neocities front-end.
     const { message } = JSON.parse(event.body);
     
-    // --- LORE CONTEXT: Converts the entire object to a clean JSON string for the LLM ---
+    // LORE CONTEXT: Converts the entire object to a clean JSON string for the LLM.
     const fullContext = JSON.stringify(loreData, null, 2);
-    // --- END LORE CONTEXT ---
     
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     const model = 'gemini-1.5-flash-latest';
@@ -78,7 +76,6 @@ exports.handler = async function(event, context) {
     });
 
     if (!response.ok) {
-      // If Gemini API returns an error status (4xx or 5xx)
       const errorBody = await response.json();
       console.error("Error from Gemini API:", errorBody);
       throw new Error(`Gemini API returned status ${response.status}: ${JSON.stringify(errorBody)}`);

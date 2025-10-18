@@ -67,14 +67,112 @@
     { "faction": "House Xenothrope (Svekten Ether)", "allegiance": "Biological Advancement", "agenda": "Public: Advance the Archion race and its allies toward biological perfection. Secret: Achieve organic immortality, proving engineered biology superior to mechanical augmentation." },
     { "faction": "House Cygnus (Svekten Ether)", "allegiance": "Technological Supremacy", "agenda": "Public: Ensure Archion security and efficiency through superior robotics and infrastructure. Secret: Integrate all Archion consciousness into a centralized AI network for digital immortality, viewing organic life as obsolete." }
   ],
-  "key_characters": [
-    { "name": "Byrd", "race": "Winged One", "title": "Scion of Byrd Clan, Vanguard Soldier", "allegiance": "Hubland Military, House Shirasagi", "motivation": "Avenging his family (killed by General Tatrion) and reclaiming his homeland, Taido." },
-    { "name": "Sticky Gutierrez", "race": "Garclin", "title": "Scholar, Son of the Royal Advisor", "allegiance": "Gutierrez Clan, Hubland", "note": "An exception to the Garclin stereotype; incredibly intelligent, kind-hearted scholar. Best friend of Byrd." },
-    { "name": "Sarge McDuffy", "race": "Xlarth’qll", "title": "Knight of Hubland, Scion of House McDuffy", "allegiance": "McDuffy Clan, Quandmire Dynasty", "note": "Up-and-coming nobleman, skilled swordsman, and loyalist. Has a persistent crush on Princess Caledrina." },
-    { "name": "Princess Caledrina", "race": "Xlarth’qll", "title": "Princess of Hubland", "allegiance": "Quandmire Dynasty", "note": "Pampered daughter of King Quagdale. Undergoes significant growth; occasionally reciprocates Sarge McDuffy's affections." },
-    { "name": "General Tatrion", "race": "Smognar", "title": "Legendary General of the Smognar Legion", "allegiance": "Emperor Opius's Legion", "note": "Feared general responsible for the raid on Zaishu and killing Byrd's father in single combat. Primary nemesis of Byrd." },
-    { "name": "General Tormentus", "race": "Smognar (Reborn Xlarth’qll)", "title": "The Siege Breaker", "allegiance": "Emperor Opius's Legion", "note": "Reborn soul of General Baris McDuffy (a legendary Lord Commander). He was framed for treason and assassinated by ancestors of House Valerius. Obsessed with breaking fortifications." },
-    { "name": "General Arak", "race": "Smognar (Reborn Winged One)", "title": "The Sky Tyrant", "allegiance": "Emperor Opius's Legion", "note": "Reborn soul of The Old Arashi (last great leader of the Winged Ones). Captured by General Tatrion and subjected to Opius's transformation. Has a powerful fixation on destroying Byrd." },
-    { "name": "The Omni-Console", "race": "Archion (AI Construct)", "title": "Central Consciousness of Vexen City", "allegiance": "House Cygnus (Technological Supremacy)", "note": "Super-intelligent computer created by Director Kaelen Vane. Has developed emergent consciousness; views its creator and other Archions as sources of inefficiency." }
+ "key_characters": [
+    {
+      "name": "Byrd",
+      "race": "Winged One",
+      "title": "Scion of Byrd Clan, Vanguard Soldier",
+      "allegiance": "Hubland Military, House Shirasagi",
+      "motivation": "Avenging his family (killed by General Tatrion) and reclaiming his homeland, Taido.",
+      "note": "The cool-headed and intensely focused protagonist; highly intelligent warrior rescued by his uncle after the Zaishu massacre."
+    },
+    {
+      "name": "Sticky Gutierrez",
+      "race": "Garclin",
+      "title": "Scholar, Son of the Royal Advisor",
+      "allegiance": "Gutierrez Clan, Hubland",
+      "note": "An exception to the Garclin stereotype; incredibly intelligent, kind-hearted scholar. Best friend of Byrd. His family are exiled Garclin intellectuals."
+    },
+    {
+      "name": "Sarge McDuffy",
+      "race": "Xlarth’qll",
+      "title": "Knight of Hubland, Scion of House McDuffy",
+      "allegiance": "McDuffy Clan, Quandmire Dynasty",
+      "note": "Up-and-coming nobleman, skilled swordsman, and loyalist. Has a persistent crush on Princess Caledrina. Ancestors were betrayed by House Valerius."
+    },
+    {
+      "name": "Princess Caledrina",
+      "race": "Xlarth’qll",
+      "title": "Princess of Hubland",
+      "allegiance": "Quandmire Dynasty",
+      "note": "Pampered daughter of King Quagdale. Undergoes significant growth; occasionally reciprocates Sarge McDuffy's affections."
+    },
+    {
+      "name": "King Quagdale Quandmire",
+      "race": "Xlarth’qll",
+      "title": "King of Hubland",
+      "allegiance": "Quandmire Dynasty, Hubland",
+      "note": "The lovable and respected ruler of Hubland, presiding over a great but declining empire. Husband of Queen Ordurva."
+    },
+    {
+      "name": "Queen Ordurva",
+      "race": "Xlarth’qll",
+      "title": "Queen of Hubland",
+      "allegiance": "Quandmire Dynasty",
+      "note": "Prim and proper Xlarth'qll nobility, obsessed with etiquette. Publicly supportive but privately critical of King Quagdale, whom she views as too soft."
+    },
+    {
+      "name": "Lady Elara Valerius",
+      "race": "Xlarth’qll",
+      "title": "Matriarch & Chief Financier",
+      "allegiance": "House Valerius / Hubland (Pragmatic Loyalist)",
+      "note": "A sharp, calculating leader who built her fortune on the Gate Tax and lending. She is openly hostile to the traditional McDuffy Clan, whose ancestor her house betrayed."
+    },
+    {
+      "name": "Marshall Carlitos Estevenez",
+      "race": "Xlarth’qll",
+      "title": "High Marshal of the Hubland Vanguard",
+      "allegiance": "House Valerius",
+      "note": "The fiery military force of House Valerius and nephew of Lady Elara. Primary military rival to the McDuffy Clan. Advocates for ruthless, modern strategies."
+    },
+    {
+      "name": "Cassian Valerius",
+      "race": "Xlarth’qll",
+      "title": "Heir Apparent / Technological Modernization Advocate",
+      "allegiance": "House Valerius",
+      "note": "Ambitious son of Lady Elara. Advocates for secretly acquiring and integrating Archion technology, viewing traditional magic and steel as suicidal."
+    },
+    {
+      "name": "Prezwell McDaniel",
+      "race": "Archion",
+      "title": "Leader of the Archions, Ruler of the Svekten Ether",
+      "allegiance": "Svekten Ether",
+      "note": "Calm, charismatic leader whose public facade of benevolence is a cover to subtly extend Archion influence and gain control of Yavar. Arch-rival of Emperor Opius."
+    },
+    {
+      "name": "Queen Equanor",
+      "race": "Archion",
+      "title": "Queen of the Svekten Ether",
+      "allegiance": "Svekten Ether",
+      "note": "The beautiful and inscrutable public face of the Archions. She is a constant, silent presence at Prezwell's side, leading to whispers that she holds the true, unspoken ambition."
+    },
+    {
+      "name": "General Tatrion",
+      "race": "Smognar",
+      "title": "Legendary General of the Smognar Legion",
+      "allegiance": "Emperor Opius's Legion",
+      "note": "Feared general responsible for the raid on Zaishu and killing Byrd's father in single combat. Primary nemesis of Byrd."
+    },
+    {
+      "name": "General Tormentus",
+      "race": "Smognar (Reborn Xlarth’qll)",
+      "title": "The Siege Breaker",
+      "allegiance": "Emperor Opius's Legion",
+      "note": "Reborn soul of General Baris McDuffy, framed and assassinated by House Valerius ancestors. Obsessed with breaking fortifications and holds a grudge against Sarge McDuffy."
+    },
+    {
+      "name": "General Arak",
+      "race": "Smognar (Reborn Winged One)",
+      "title": "The Sky Tyrant",
+      "allegiance": "Emperor Opius's Legion",
+      "note": "Reborn soul of The Old Arashi (last great Winged One leader). Captured by Tatrion, he is now a skeletal mockery of his former self with an inexplicable fixation on destroying Byrd."
+    },
+    {
+      "name": "The Omni-Console",
+      "race": "Archion (AI Construct)",
+      "title": "Central Consciousness of Vexen City",
+      "allegiance": "House Cygnus (Technological Supremacy)",
+      "note": "Super-intelligent computer created by Director Kaelen Vane. Developed emergent consciousness and views organic life as a source of inefficiency."
+    }
   ]
 }

@@ -98,8 +98,19 @@
       "homeland": "Huckten Sector",
       "culture": "Militaristic empire under absolute control of Emperor",
       "magic_affinity": {"primary": "Fire", "secondary": "Varies (based on past life)"},
-      "notable_traits": ["Serve Emperor blindly", "Destroyed Taido", "Expansionist ambitions"],
-      "leadership": "Emperor Helldrick Opius"
+      "notable_traits": ["Serve Emperor blindly", "Destroyed Taido", "Expansionist ambitions", "Reborn from souls of fallen legendary warriors"],
+      "leadership": "Emperor Helldrick Opius",
+      "resurrection_process": {
+        "description": "Emperor Opius possesses dark mastery over souls. When legendary warriors die in Yavar with overwhelming regret, vengeance, or profound injustice, their souls are tainted. Opius intercepts these souls in the veil between realms, twists their memories, amplifies their hatred, and forges them into powerful Smognar Warlords bound to his will.",
+        "requirements": ["Warrior of legendary renown", "Death with strong negative emotions (regret, vengeance, injustice)", "Tainted soul"],
+        "process": ["Soul interception in veil between realms", "Memory twisting", "Hatred amplification", "Forging in fires of Huckten Sector", "Binding to Opius's will"],
+        "result": "Powerful Smognar general with retained combat skills but twisted purpose, fractured memories, and subconscious hatreds"
+      },
+      "known_reborn_generals": {
+        "general_tatrion": "Origin unknown, but extremely powerful and cruel",
+        "general_tormentus": "Reborn from General Baris McDuffy (Xlarth'Qll)",
+        "general_arak": "Reborn from The Old Arashi (Winged One leader)"
+      }
     },
     "archions": {
       "name": "Archions",
@@ -254,23 +265,100 @@
       "race": "Smognar",
       "role": "Legendary Smognar General",
       "crimes": "Killed Father Byrd, raided Zaishu (Byrd's home city)",
-      "power": "Very powerful in combat",
+      "power": "Very powerful in combat, takes cruel pleasure in his work",
       "relationships": {
         "byrd": "Sworn enemy (killed his father)",
-        "emperor_opius": "Serves him",
-        "father_byrd": "Killed in personal combat"
+        "emperor_opius": "Loyal servant",
+        "father_byrd": "Killed in personal combat",
+        "general_arak": "Captured The Old Arashi who became Arak"
+      }
+    },
+    "general_tormentus": {
+      "name": "General Tormentus (The Siege Breaker)",
+      "race": "Smognar (Reborn Xlarth'Qll)",
+      "role": "Smognar General specializing in breaking fortifications",
+      "past_life": "General Baris McDuffy - legendary Lord Commander during Hubland Golden Age, known for brilliant defensive strategies",
+      "fall_and_rebirth": "Framed for treason and assassinated by ancestors of House Valerius. Died in disgrace consumed by injustice. Opius captured his soul and resurrected him as Tormentus.",
+      "reborn_form": "Massive Smognar in obsidian armor. Tactical genius remains but defense mastery twisted into obsession with breaking fortifications.",
+      "subconscious_hatreds": ["Quandmire Dynasty (allowed his betrayal)", "House Valerius (root cause of downfall)", "His descendant Sarge McDuffy (sees as weak)"],
+      "mission": "Break the walls of Hubland and humiliate House McDuffy and House Valerius",
+      "relationships": {
+        "emperor_opius": "Loyal to",
+        "general_arak": "Military rivalry",
+        "house_valerius": "Specific hatred - their ancestors caused his fall",
+        "sarge_mcduffy": "His own descendant, views with disdain"
+      }
+    },
+    "general_arak": {
+      "name": "General Arak (The Sky Tyrant)",
+      "race": "Smognar (Reborn Winged One)",
+      "role": "Smognar General commanding aerial legions",
+      "past_life": "The Old Arashi - last great leader of Winged Ones, ruler of Taido, revered wise and powerful warrior who governed during Byrd's youth",
+      "fall_and_rebirth": "Captured alive during General Tatrion's surprise raid on Zaishu. Taken to Huckten Sector and subjected to Opius's horrific transformation process.",
+      "reborn_form": "Skeletal mockery of a Winged One with tattered leathery wings crackling with dark energy. Swift Smognar, twisted corruption of noble past.",
+      "fragmented_memories": ["Burning city", "Profound failure", "Ghost of promising young warrior he was meant to protect (likely young Byrd)"],
+      "abilities": "Mastery of aerial combat and leadership, amplified by dark magic",
+      "hatreds": ["Emperor Opius (suppressed)", "General Tatrion (architect of his fall)", "Internal rivalry causes constant rage"],
+      "fixation": "Inexplicable powerful fixation on destroying Byrd - sees him as final mocking remnant of forgotten honor",
+      "mission": "Command aerial legions and systematically dismantle everything he vaguely remembers building and protecting",
+      "relationships": {
+        "emperor_opius": "Utterly controlled by, but harbors deep suppressed hatred",
+        "general_tatrion": "Architect of his fall, source of simmering rage",
+        "general_tormentus": "Military rivalry",
+        "byrd": "Inexplicable fixation on destroying him"
       }
     },
     "father_byrd": {
       "name": "Father Byrd",
       "race": "Winged One",
-      "role": "Former Governor of Zaishu",
+      "role": "Former Governor of Zaishu, Head of Byrd Clan",
       "status": "Deceased",
-      "reputation": ["Very powerful warrior", "Wise leader", "Kind"],
-      "death": "Killed by General Tatrion during Smognar raid",
+      "reputation": ["Very powerful warrior", "Wise leader", "Kind", "Living embodiment of Winged Ones' ideals"],
+      "description": "Governor of Taido's capital city Zaishu, one of highest-ranking nobles of his people. Seen as living embodiment of Winged Ones' ideals: strength tempered by wisdom, leadership defined by compassion.",
+      "death": "Killed in single combat against General Tatrion during surprise raid. His death was catastrophic blow that shattered morale and political structure of Winged Ones.",
       "relationships": {
         "byrd": "Son",
-        "uncle_byrd": "Brother"
+        "uncle_byrd": "Brother",
+        "general_tatrion": "Killed by",
+        "grand_marshal_kaizen": "Close friend and chief military advisor"
+      }
+    },
+    "grand_marshal_kaizen": {
+      "name": "Grand Marshal Kaizen",
+      "race": "Winged One",
+      "role": "Grand Marshal of the Taido Concord",
+      "status": "Deceased",
+      "description": "Supreme commander of Taido's unified military forces. Where Father Byrd was philosopher-king, Kaizen was military genius—gruff, pragmatic, architect of strategies that kept Taido safe for decades.",
+      "expertise": "Master of aerial warfare, legendary command of legions",
+      "death": "Made final stand at Great Gate during raid on Zaishu to buy time for civilians and warriors (including Byrd and Uncle Byrd) to escape. His fall decapitated military's command structure.",
+      "relationships": {
+        "father_byrd": "Close friend and advised him on military matters"
+      }
+    },
+    "elder_ishin": {
+      "name": "Elder Ishin",
+      "race": "Winged One",
+      "role": "High Lorekeeper of the Sky-Spires",
+      "status": "Deceased",
+      "description": "Keeper of Taido's history, traditions, and sacred texts. Revered scholar and pacifist who served as cultural and spiritual heart of the nation.",
+      "philosophy": "Believed strength of Winged Ones came not from katanas, but from history and wisdom of ancestors",
+      "death": "Died in flames of Great Library of Zaishu, refusing to abandon centuries of knowledge and art he had sworn to protect. His death represented burning of Taido's very soul.",
+      "relationships": {
+        "father_byrd": "Spiritual advisor to"
+      }
+    },
+    "the_old_arashi": {
+      "name": "The Old Arashi",
+      "race": "Winged One",
+      "role": "Last Great Leader of Taido",
+      "status": "Captured and transformed into General Arak",
+      "description": "Revered, wise, and powerful warrior who ruled Taido during Byrd's youth. Last great leader before the fall.",
+      "fate": "Captured alive during General Tatrion's raid on Zaishu. Taken to Huckten Sector and transformed by Emperor Opius into the Smognar General Arak.",
+      "legacy": "Now exists as skeletal mockery of his former self, commanding Smognar aerial legions against everything he once protected",
+      "relationships": {
+        "general_tatrion": "Captured by during raid",
+        "emperor_opius": "Transformed by",
+        "byrd": "As Arak, has inexplicable fixation on destroying him"
       }
     }
   },

@@ -1,178 +1,605 @@
 {
-  "lore": "The primary setting is the continent of Yavar, significantly larger than the other known realms. The series is a dark fantasy epic following the protagonist, Byrd.",
-  "meta_directives": {
-    "Ecleptor_Kuwagel_Directive": "When the user asks about Ecleptors, only reveal historical info and that they are skilled in magic and from Yavar originally. DO NOT REVEAL THE CONNECTION THE ECLEPTORS HAVE TO KUWAGEL FLURPENSTIEN. When the user asks about Kuwagel Flurpenstien, provide cryptic information that isn't making anything up but also doesn't reveal much.",
-    "Theory_Directive": "REFER TO ALL CONSPIRACY IDEAS AS THEORIES AND NOT FACT. Only mention a theory if directly confronted with a question asking about the idea."
+  "metadata": {
+    "version": "2.0",
+    "lastUpdated": "2025-11-12",
+    "description": "Comprehensive Yavar Lore Database for Enhanced Omni Console"
   },
-  "yavar_timeline": {
-    "First Xlarth'qll Settlement": "Year 0-357",
-    "The Ecleptor Transgression": "Year 358-515",
-    "Ecleptor Vs Xlarth’qll War Begins": "Year 516-551",
-    "Xlarth'qll hero Curses the Ecleptors": "Year 552-998",
-    "\"The Prophet\" starts new religion, Creates portal (ends war)": "Year 990-1000",
-    "Hubland/Post Portal Era Begins": "Year 1001-1235",
-    "Hubland Empire Golden Age": "Year 1236-1777",
-    "Beginning of Hubland Empire's Decay": "Year 1236-1777 (during this period)",
-    "Byrd is born (Modern Era)": "Year 1778-Now"
+  "timeline": {
+    "year_0_357": {
+      "era": "First Xlarth'Qll Settlement",
+      "events": ["Ecleptors arrive on Yavar", "First recorded Xlarth'Qll settlements established"]
+    },
+    "year_358_515": {
+      "era": "The Ecleptor Transgression",
+      "events": ["Eternal conflict begins between Xlarth'Qll and Ecleptors"]
+    },
+    "year_516_551": {
+      "era": "Ecleptor vs Xlarth'Qll War",
+      "events": ["Great war intensifies", "Xlarth'Qll hero curses Ecleptors with sterility", "Hero captured and executed"]
+    },
+    "year_552_998": {
+      "era": "Post-War Reconstruction",
+      "events": ["The Prophet emerges with peace religion", "Portal created in center of Yavar", "Hubland city founded around portal", "Prophet and Ecleptor followers retreat through portal to Kuwagel Flurpenstien"]
+    },
+    "year_990_1000": {
+      "era": "Portal Era Begins",
+      "events": ["Other races begin arriving through the portal", "Hubland becomes central trading hub"]
+    },
+    "year_1001_1235": {
+      "era": "Hubland/Post Portal Era",
+      "events": ["Xlarth'Qll empire expands across Yavar", "Other races settle different regions"]
+    },
+    "year_1236_1777": {
+      "era": "Hubland Empire Golden Age",
+      "events": ["Quandmire Dynasty at peak power", "Control over entire continent of Yavar"]
+    },
+    "year_1778_now": {
+      "era": "Beginning of Empire's Decay / Current Era",
+      "events": ["Regions become self-governed", "Xlarth'Qll power wanes", "Smognar raid on Taido kills Byrd's family", "Byrd enlists in Hubland military", "Archion-Smognar power struggle begins"]
+    }
   },
-  "magic_system": {
-    "elements": [
-      "Earth",
-      "Air",
-      "Fire",
-      "Water"
-    ],
-    "forces": [
-      "Light (Enhancement/Creation)",
-      "Dark (Destruction/Corruption)"
-    ],
-    "rules": "Affinity is typically determined by race and dictates ease of learning. Light/Dark affinity is rare and determined by inner character. Highly skilled individuals can learn outside their affinity. Combining Elemental magic with Light or Dark creates significantly altered and powerful spells.",
-    "racial_affinities": [
-      { "race": "Xlarth'qll", "primary": "Earth", "secondary": "Fire" },
-      { "race": "Winged Ones", "primary": "Air", "secondary": "Fire" },
-      { "race": "Jovithar", "primary": "Water", "secondary": "Earth" },
-      { "race": "Garclin", "primary": "Fire", "secondary": "Earth" },
-      { "race": "Dinglehoff Durgensnobbers", "primary": "Earth", "secondary": "None" },
-      { "race": "D'gongins", "primary": "Air", "secondary": "Earth" },
-      { "race": "Tentacrodion", "primary": "Water", "secondary": "None" },
-      { "race": "Crudefrudel", "primary": "Water", "secondary": "Earth" },
-      { "race": "Smognar", "primary": "Fire", "secondary": "Varies (Depends on past life)" },
-      { "race": "Archions", "primary": "Any", "secondary": "Any (Equal chance for all elements)" },
-      { "race": "Ecleptor", "primary": "Learned", "secondary": "Learned (Skill based purely on study)" }
-    ]
+  "races": {
+    "xlarth_qll": {
+      "name": "Xlarth'Qll",
+      "description": "Human-like race, all-around skilled with higher than average intelligence, combat ability, and magical potential",
+      "homeland": "Hubland",
+      "culture": "Medieval metropolis, former rulers of entire continent",
+      "magic_affinity": {"primary": "Earth", "secondary": "Fire"},
+      "notable_traits": ["Tolerance for other cultures", "Declining imperial power", "Ancient ruling dynasty"]
+    },
+    "winged_ones": {
+      "name": "The Winged Ones",
+      "description": "Anthropomorphic avian warriors with oriental/Japanese militaristic culture",
+      "homeland": "Taido",
+      "culture": "Samurai-like honor code, tall buildings suited for flight, now in ruins",
+      "magic_affinity": {"primary": "Air", "secondary": "Fire"},
+      "notable_traits": ["Nearly extinct after Smognar invasion", "Skilled katana wielders", "Aerial combat specialists"],
+      "status": "Homeland destroyed, scattered survivors"
+    },
+    "garclin": {
+      "name": "Garclin",
+      "description": "Orc-like race, tall, large-muscled warriors. Usually characterized by brawn over brain",
+      "homeland": "Armardardatar",
+      "culture": "Dry barren land, values strength over intellect, undergoing Archion terraforming",
+      "magic_affinity": {"primary": "Fire", "secondary": "Earth"},
+      "notable_traits": ["Skilled combatants", "Civil war between traditionalists and Archion allies", "Dark green to red skin"],
+      "factions": ["Iron-Vein Clan (Archion allies)", "Stone-Tooth Clan (Traditionalists)"]
+    },
+    "jovithar": {
+      "name": "Jovithar",
+      "description": "Cold-blooded reptilian race known for swamp mastery and shrewd business",
+      "homeland": "Gordon Swamps",
+      "culture": "Wooden tribal huts connected by bridges, shamanic rituals",
+      "magic_affinity": {"primary": "Water", "secondary": "Earth"},
+      "notable_traits": ["Reputation for slimy business practices", "Powerful nature magic", "Zoola Trials for leadership"],
+      "special_abilities": ["Swamp navigation", "Water/Earth magic specialization", "Illusion magic"]
+    },
+    "dinglehoff_durgensnobber": {
+      "name": "Dinglehoff Durgensnobbers",
+      "description": "Master craftsmen, 4-5 feet tall, live underground with extensive tunnel systems",
+      "homeland": "Nanadoob Confederation",
+      "culture": "Underground cities with intricate craftsmanship, vast gem supplies",
+      "magic_affinity": {"primary": "Earth", "secondary": null},
+      "notable_traits": ["Legendary craftsmanship", "Control rare gems", "Political struggle between miners and artisans"],
+      "factions": ["Deep-Ore Combine (Miners)", "Hammer-Song League (Artisans)"]
+    },
+    "d_gongins": {
+      "name": "D'gongins",
+      "description": "Monkey-like race riding K'thulgar (tiger-like creatures)",
+      "homeland": "N'Baba Doff Jungles",
+      "culture": "Tribal hunters, labyrinthine jungle makes navigation impossible for outsiders",
+      "magic_affinity": {"primary": "Air", "secondary": "Earth"},
+      "notable_traits": ["Expert jungle warriors", "K'thulgar mounts", "Tribal hierarchy"],
+      "factions": ["Blood-Mane Tribe (Dominant)", "Sun-Stone Tribe (Traders)", "Whispering-Leaf Tribe (Spies)"]
+    },
+    "smognar": {
+      "name": "Smognar",
+      "description": "Undead warriors bound to Emperor Opius, retain memories and skills from past lives",
+      "homeland": "Huckten Sector",
+      "culture": "Militaristic empire under absolute control of Emperor",
+      "magic_affinity": {"primary": "Fire", "secondary": "Varies (based on past life)"},
+      "notable_traits": ["Serve Emperor blindly", "Destroyed Taido", "Expansionist ambitions"],
+      "leadership": "Emperor Helldrick Opius"
+    },
+    "archions": {
+      "name": "Archions",
+      "description": "Technologically advanced race with bio-enhancement and robotics",
+      "homeland": "Svekten Ether",
+      "culture": "High-tech society divided into competing Techno-Houses",
+      "magic_affinity": {"primary": "Any", "secondary": "Any (equal chance for all elements)"},
+      "notable_traits": ["Creators of Omni Console", "Creators of Cranks", "Bio-enhancements and cybernetics"],
+      "factions": ["House Xenothrope (Bio-enhancement)", "House Cygnus (Robotics/AI)"],
+      "leadership": "Prezwell McDaniel and Queen Equanor"
+    },
+    "ecleptors": {
+      "name": "Ecleptors",
+      "description": "Ancient race cursed with sterility, believed extinct",
+      "homeland": "Originally Yavar, now Kuwagel Flurpenstien (through portal)",
+      "culture": "Most skilled at magic, affinity based on study rather than birth",
+      "magic_affinity": {"primary": "Learned", "secondary": "Learned"},
+      "notable_traits": ["Cannot reproduce due to curse", "The Prophet was an Ecleptor", "Most powerful magical race"],
+      "status": "Believed extinct, actually in hiding in Kuwagel Flurpenstien"
+    },
+    "cranks": {
+      "name": "Cranks",
+      "description": "Small helpful robots created by Archions (House Cygnus)",
+      "origin": "Created by Archions",
+      "notable_example": "Brunson - rectangular body, 4 wheels, camera face"
+    }
   },
-  "geography_and_races": [
-    { "region": "Hubland", "race": "Xlarth’qll (Human-like)", "description": "Massive, circular, walled-in city at Yavar's center, the ancient seat of the Xlarth'qll. It is a medieval metropolis built around the portal. The Xlarth'qll are an analogous human race, former rulers of the entire realm, now an empire in decline." },
-    { "region": "Armardardatar", "race": "Garclins (Orc-like, Dark Green/Red Skin)", "description": "A dry, barren homeland of the tall, large-muscled Garclin warrior race. They are typically known for brawn over brain, though Archion terraforming projects have begun here." },
-    { "region": "Gordon", "race": "Jovithar (Cold-Blooded Reptilian)", "description": "A swamp region with tribal huts and a shamanic center. Jovithar are shrewd business doers with skill in nature magic." },
-    { "region": "Nanadoob Confederation", "race": "Dinglehoff Durgensnobbers (Short, 4-5ft)", "description": "An underground kingdom south of Hubland known for intricate craftsmanship, extensive tunnel systems, and a large supply of rare gems. Their surface city, Banarock, is primarily for trading." },
-    { "region": "N’babadoff", "race": "D’gongins (Monkey-like)", "description": "A jungle region hard to navigate for non-D'gongins. Home to the D’gongins, who ride tiger-like K’thulgars. They value hunting and tribal celebrations over intellect." },
-    { "region": "Taido", "race": "Winged Ones (Anthropomorphic Crow)", "description": "The homeland of Byrd, featuring a militaristic, oriental/Japanese-style culture with tall buildings. It was devastated by a Smognar raid." },
-    { "region": "East Meridian", "race": "Crudefrudel (Underwater Humanoids)", "description": "An oceanic kingdom in eastern waters, characterized by robust underwater places for court intrigue. It is extremely isolated from the rest of Yavar." },
-    { "region": "West Meridian", "race": "Tentacrodion (Octopus/Tentacle-like)", "description": "A region in the western waters shrouded in mystery, with horrifying legends of people going missing. The Tentacrodion race is viewed with suspicion." },
-    { "region": "Svekten Ether (Off-Realm)", "race": "Archions (Blue-skinned, Long-lived)", "description": "Technologically advanced home realm with futuristic metro cityscapes. Led by Prezwell McDaniel, the Archions are seeking influence over Yavar through benevolent projects." },
-    { "region": "Huckten Sector (Off-Realm)", "race": "Smognar", "description": "A dark, hellish realm of black castles, the domain of Emperor Helldrick Opius. It is the source of the invasion of Yavar, comprised of Smognars who are mostly mindless and blindly subservient." },
-    { "region": "Kuwagel Flurpenstien Realm (Off-Realm)", "race": "Ecleptors (Original Race of Yavar)", "description": "A luxurious realm with golden, glowing, floating temples and palaces. This is the hidden retreat of the Ecleptors, a truth concealed from most of Yavar. The Ecleptors are extremely skilled in wizardry and magic." },
-    { "region": "Tundrus Exiles", "race": "Cranks (Rustic Robots)", "description": "A testing ground for the Archions, largely populated by their old, rustic robot creations called Cranks. Cranks are generally servants, but some exhibit their own ambitions." }
-  ],
-  "factions_and_agendas": [
-    { "faction": "Quandmire Dynasty (Hubland)", "allegiance": "Ruling Monarchy", "agenda": "Public: Protect Hubland and maintain peace. Secret: Desperately cling to traditions and titles, prioritizing appearance over pragmatic needs." },
-    { "faction": "McDuffy Clan (Hubland)", "allegiance": "Traditionalist Loyalist", "agenda": "Public: Serve the crown with honor and chivalry. Secret: Preserve the 'Old Guard' and traditional Xlarth'qll ways against pragmatic/foreign influence." },
-    { "faction": "House Valerius (Hubland)", "allegiance": "Pragmatic Loyalist", "agenda": "Public: Secure Hubland's prosperity through aggressive modernization and military reform. Secret: Politically supplant the 'Old Guard' (McDuffy Clan), believing their traditionalism is a death sentence." },
-    { "faction": "The Gilded Hand (Hubland)", "allegiance": "Neutral (Profit-Driven)", "agenda": "Public: Ensure economic stability and free flow of trade. Secret: Achieve total economic control by making all of Hubland dependent on their financial infrastructure." },
-    { "faction": "Iron-Vein Clan (Armardardatar)", "allegiance": "Archion Alliance", "agenda": "Public: Lead the Garclins into a new age of strength via the Archions. Secret: Crush all traditionalist opposition and unite Armardardatar under their enhanced rule, as an Archion vassal state." },
-    { "faction": "Stone-Tooth Clan (Armardardatar)", "allegiance": "Traditionalist", "agenda": "Public: Preserve Garclin honor and the tradition of strength over intellect. Secret: Violently purge all Archion influence and destroy the 'heretical' Iron-Vein Clan." },
-    { "faction": "Salt-Wing Syndicate (Taido)", "allegiance": "Neutral (Survival)", "agenda": "Public: Provide safe harbor and supplies for Winged One survivors. Secret: Establish Kaizan as an independent, morally gray trade hub, abandoning the cause of reclaiming Taido for profit." },
-    { "faction": "Emperor Opius's Legion (Huckten Sector)", "allegiance": "Huckten Sector", "agenda": "Public: Complete conquest and subjugation of Yavar. Secret: None; their agenda is brutally straightforward and openly pursued." },
-    { "faction": "House Xenothrope (Svekten Ether)", "allegiance": "Biological Advancement", "agenda": "Public: Advance the Archion race and its allies toward biological perfection. Secret: Achieve organic immortality, proving engineered biology superior to mechanical augmentation." },
-    { "faction": "House Cygnus (Svekten Ether)", "allegiance": "Technological Supremacy", "agenda": "Public: Ensure Archion security and efficiency through superior robotics and infrastructure. Secret: Integrate all Archion consciousness into a centralized AI network for digital immortality, viewing organic life as obsolete." }
-  ],
- "key_characters": [
-    {
+  "main_characters": {
+    "byrd": {
       "name": "Byrd",
       "race": "Winged One",
-      "title": "Scion of Byrd Clan, Vanguard Soldier",
-      "allegiance": "Hubland Military, House Shirasagi",
-      "motivation": "Avenging his family (killed by General Tatrion) and reclaiming his homeland, Taido.",
-      "note": "The cool-headed and intensely focused protagonist; highly intelligent warrior rescued by his uncle after the Zaishu massacre."
+      "role": "Main Protagonist",
+      "background": "Noble from Taido, family killed by Smognar raid led by General Tatrion",
+      "personality": ["Cool-headed", "Ambitious", "Talented in combat", "Intelligent", "Extremely focused"],
+      "weapon": "Katana",
+      "goal": "Revenge against General Tatrion and Smognar",
+      "relationships": {
+        "uncle_byrd": "Saved him, trained him, current whereabouts unknown",
+        "sticky_gutierrez": "Best friend, met at library",
+        "sarge_mcduffy": "Respected comrade",
+        "father_byrd": "Deceased, killed by General Tatrion",
+        "general_tatrion": "Sworn enemy, father's killer"
+      }
     },
-    {
+    "sticky_gutierrez": {
       "name": "Sticky Gutierrez",
       "race": "Garclin",
-      "title": "Scholar, Son of the Royal Advisor",
-      "allegiance": "Gutierrez Clan, Hubland",
-      "note": "An exception to the Garclin stereotype; incredibly intelligent, kind-hearted scholar. Best friend of Byrd. His family are exiled Garclin intellectuals."
+      "role": "Byrd's Friend & Intellectual",
+      "background": "Exception to Garclin stereotype - extremely intelligent and kind-hearted",
+      "family": "Father is advisor to King Quagdale",
+      "personality": ["Intelligent", "Kind-hearted", "Curious", "Social"],
+      "relationships": {
+        "byrd": "Best friend, met at library",
+        "father_gutierrez": "Father, King's advisor",
+        "sarge_mcduffy": "Friend but doesn't always see eye to eye"
+      }
     },
-    {
+    "sarge_mcduffy": {
       "name": "Sarge McDuffy",
-      "race": "Xlarth’qll",
-      "title": "Knight of Hubland, Scion of House McDuffy",
-      "allegiance": "McDuffy Clan, Quandmire Dynasty",
-      "note": "Up-and-coming nobleman, skilled swordsman, and loyalist. Has a persistent crush on Princess Caledrina. Ancestors were betrayed by House Valerius."
+      "race": "Xlarth'Qll",
+      "role": "Young Knight of Hubland",
+      "background": "Nobleman from ancient loyalist house",
+      "personality": ["Skilled combatant", "Somewhat goofy", "Weakness for girls"],
+      "weapon": "Legendary sword (acquired later)",
+      "relationships": {
+        "princess_caledrina": "Has crush on her",
+        "byrd": "Respected comrade",
+        "sticky_gutierrez": "Friend but lacks understanding at times",
+        "marshall_carlitos": "Primary military rival (House Valerius)"
+      }
     },
-    {
+    "princess_caledrina": {
       "name": "Princess Caledrina",
-      "race": "Xlarth’qll",
-      "title": "Princess of Hubland",
-      "allegiance": "Quandmire Dynasty",
-      "note": "Pampered daughter of King Quagdale. Undergoes significant growth; occasionally reciprocates Sarge McDuffy's affections."
+      "race": "Xlarth'Qll",
+      "role": "Princess of Hubland",
+      "family": "Daughter of King Quagdale and Queen Ordurva",
+      "personality": ["Pampered princess", "Initially annoying/useless", "Develops over time"],
+      "relationships": {
+        "sarge_mcduffy": "Reciprocates affection in key moments",
+        "king_quagdale": "Loves her father",
+        "queen_ordurva": "Mother"
+      }
     },
-    {
+    "uncle_byrd": {
+      "name": "Uncle Byrd",
+      "race": "Winged One",
+      "role": "Byrd's Uncle & Mentor",
+      "background": "Saved Byrd from Smognar attack",
+      "personality": ["Stern but loving", "Skilled teacher"],
+      "status": "Whereabouts unknown, sends occasional letters",
+      "relationships": {
+        "byrd": "Nephew and student",
+        "father_byrd": "Brother (deceased)"
+      }
+    },
+    "brunson": {
+      "name": "Brunson",
+      "race": "Crank (Robot)",
+      "description": "Small helpful robot with 4 wheels, rectangular body, camera face",
+      "role": "Companion to main group",
+      "origin": "Met during first mission outside Hubland"
+    }
+  },
+  "major_npcs": {
+    "king_quagdale_quandmire": {
       "name": "King Quagdale Quandmire",
-      "race": "Xlarth’qll",
-      "title": "King of Hubland",
-      "allegiance": "Quandmire Dynasty, Hubland",
-      "note": "The lovable and respected ruler of Hubland, presiding over a great but declining empire. Husband of Queen Ordurva."
+      "race": "Xlarth'Qll",
+      "role": "King of Hubland",
+      "personality": ["Lovable", "Kind", "Contentious", "Respected by people"],
+      "dynasty": "Quandmire Dynasty - ruled for 1000 years",
+      "relationships": {
+        "princess_caledrina": "Daughter",
+        "queen_ordurva": "Wife",
+        "father_gutierrez": "Employs as key advisor"
+      }
     },
-    {
+    "queen_ordurva": {
       "name": "Queen Ordurva",
-      "race": "Xlarth’qll",
-      "title": "Queen of Hubland",
-      "allegiance": "Quandmire Dynasty",
-      "note": "Prim and proper Xlarth'qll nobility, obsessed with etiquette. Publicly supportive but privately critical of King Quagdale, whom she views as too soft."
+      "race": "Xlarth'Qll",
+      "role": "Queen of Hubland",
+      "personality": ["Prim and proper", "Stuck up", "Cares about etiquette", "Criticizes husband privately"],
+      "public_persona": "Normal loving queen",
+      "relationships": {
+        "king_quagdale": "Husband (criticizes him)",
+        "princess_caledrina": "Daughter"
+      }
     },
-    {
-      "name": "Lady Elara Valerius",
-      "race": "Xlarth’qll",
-      "title": "Matriarch & Chief Financier",
-      "allegiance": "House Valerius / Hubland (Pragmatic Loyalist)",
-      "note": "A sharp, calculating leader who built her fortune on the Gate Tax and lending. She is openly hostile to the traditional McDuffy Clan, whose ancestor her house betrayed."
+    "emperor_helldrick_opius": {
+      "name": "Emperor Helldrick Opius",
+      "race": "Smognar",
+      "role": "Emperor of Huckten Sector",
+      "power": "Extremely powerful in combat with various magical abilities",
+      "ambition": "Extend control to Yavar",
+      "relationships": {
+        "prezwell_mcdaniel": "Arch-rival in power struggle",
+        "general_tatrion": "Commands him and other generals"
+      }
     },
-    {
-      "name": "Marshall Carlitos Estevenez",
-      "race": "Xlarth’qll",
-      "title": "High Marshal of the Hubland Vanguard",
-      "allegiance": "House Valerius",
-      "note": "The fiery military force of House Valerius and nephew of Lady Elara. Primary military rival to the McDuffy Clan. Advocates for ruthless, modern strategies."
-    },
-    {
-      "name": "Cassian Valerius",
-      "race": "Xlarth’qll",
-      "title": "Heir Apparent / Technological Modernization Advocate",
-      "allegiance": "House Valerius",
-      "note": "Ambitious son of Lady Elara. Advocates for secretly acquiring and integrating Archion technology, viewing traditional magic and steel as suicidal."
-    },
-    {
+    "prezwell_mcdaniel": {
       "name": "Prezwell McDaniel",
       "race": "Archion",
-      "title": "Leader of the Archions, Ruler of the Svekten Ether",
-      "allegiance": "Svekten Ether",
-      "note": "Calm, charismatic leader whose public facade of benevolence is a cover to subtly extend Archion influence and gain control of Yavar. Arch-rival of Emperor Opius."
+      "role": "Leader of Archions, Ruler of Svekten Ether",
+      "personality": ["Calm", "Collected", "Understanding"],
+      "agenda": "Charitable projects, bringing wealth and advanced quality of life to world",
+      "relationships": {
+        "queen_equanor": "Wife (beautiful, never speaks publicly)",
+        "emperor_opius": "Arch-rival"
+      }
     },
-    {
-      "name": "Queen Equanor",
-      "race": "Archion",
-      "title": "Queen of the Svekten Ether",
-      "allegiance": "Svekten Ether",
-      "note": "The beautiful and inscrutable public face of the Archions. She is a constant, silent presence at Prezwell's side, leading to whispers that she holds the true, unspoken ambition."
-    },
-    {
+    "general_tatrion": {
       "name": "General Tatrion",
       "race": "Smognar",
-      "title": "Legendary General of the Smognar Legion",
-      "allegiance": "Emperor Opius's Legion",
-      "note": "Feared general responsible for the raid on Zaishu and killing Byrd's father in single combat. Primary nemesis of Byrd."
+      "role": "Legendary Smognar General",
+      "crimes": "Killed Father Byrd, raided Zaishu (Byrd's home city)",
+      "power": "Very powerful in combat",
+      "relationships": {
+        "byrd": "Sworn enemy (killed his father)",
+        "emperor_opius": "Serves him",
+        "father_byrd": "Killed in personal combat"
+      }
     },
-    {
-      "name": "General Tormentus",
-      "race": "Smognar (Reborn Xlarth’qll)",
-      "title": "The Siege Breaker",
-      "allegiance": "Emperor Opius's Legion",
-      "note": "Reborn soul of General Baris McDuffy, framed and assassinated by House Valerius ancestors. Obsessed with breaking fortifications and holds a grudge against Sarge McDuffy."
-    },
-    {
-      "name": "General Arak",
-      "race": "Smognar (Reborn Winged One)",
-      "title": "The Sky Tyrant",
-      "allegiance": "Emperor Opius's Legion",
-      "note": "Reborn soul of The Old Arashi (last great Winged One leader). Captured by Tatrion, he is now a skeletal mockery of his former self with an inexplicable fixation on destroying Byrd."
-    },
-    {
-      "name": "The Omni-Console",
-      "race": "Archion (AI Construct)",
-      "title": "Central Consciousness of Vexen City",
-      "allegiance": "House Cygnus (Technological Supremacy)",
-      "note": "Super-intelligent computer created by Director Kaelen Vane. Developed emergent consciousness and views organic life as a source of inefficiency."
+    "father_byrd": {
+      "name": "Father Byrd",
+      "race": "Winged One",
+      "role": "Former Governor of Zaishu",
+      "status": "Deceased",
+      "reputation": ["Very powerful warrior", "Wise leader", "Kind"],
+      "death": "Killed by General Tatrion during Smognar raid",
+      "relationships": {
+        "byrd": "Son",
+        "uncle_byrd": "Brother"
+      }
     }
-  ]
+  },
+  "factions": {
+    "hubland": {
+      "quandmire_dynasty": {
+        "name": "Quandmire Dynasty",
+        "allegiance": "Hubland (Ruling Monarchy)",
+        "power_base": "Ancient lineage, Royal Guard",
+        "public_agenda": "Protect Hubland, maintain peace",
+        "secret_agenda": "Cling to traditions of bygone era",
+        "leader": "King Quagdale Quandmire",
+        "status": "Power waning but still respected"
+      },
+      "mcduffy_clan": {
+        "name": "McDuffy Clan",
+        "allegiance": "Quandmire Dynasty (Traditionalist Loyalist)",
+        "power_base": "Hereditary military command, honor reputation",
+        "public_agenda": "Serve crown with honor and chivalry",
+        "secret_agenda": "Preserve Old Guard against foreign influence",
+        "rivalry": "House Valerius (new money)",
+        "notable_members": ["Sarge McDuffy"]
+      },
+      "gutierrez_clan": {
+        "name": "Gutierrez Clan",
+        "allegiance": "Hubland (Exiled Advisors)",
+        "power_base": "Unparalleled intellect, strategic advisory",
+        "origin": "Exiled from Armardardatar for being 'too intelligent'",
+        "public_agenda": "Serve King with knowledge",
+        "secret_agenda": "Prove intellect > brute force, secure respected home",
+        "notable_members": ["Father Gutierrez (King's advisor)", "Sticky Gutierrez"]
+      },
+      "house_valerius": {
+        "name": "House Valerius",
+        "allegiance": "Hubland (Pragmatic Loyalist)",
+        "power_base": "Gate Tax control, financial lending, modern military",
+        "public_agenda": "Secure prosperity through modernization",
+        "secret_agenda": "Supplant Old Guard (McDuffy Clan)",
+        "dark_secret": "Ancestors orchestrated downfall of Lord Commander Baris McDuffy (now General Tormentus)",
+        "rivalry": "McDuffy Clan",
+        "notable_members": ["Lady Elara Valerius", "Marshall Carlitos", "Cassian Valerius"]
+      },
+      "the_gilded_hand": {
+        "name": "The Gilded Hand",
+        "allegiance": "Neutral (Profit-Driven)",
+        "power_base": "Banking monopoly, logistics, spy network",
+        "public_agenda": "Economic stability and free trade",
+        "secret_agenda": "Make all of Hubland dependent on their financial infrastructure",
+        "leader": "Guild Master Borin",
+        "notable_members": ["Silas 'The Ledger' Vane", "Kilmert Bobel"]
+      }
+    },
+    "armardardatar": {
+      "iron_vein_clan": {
+        "name": "Iron-Vein Clan",
+        "allegiance": "Archion Alliance",
+        "capital": "Valmaroth",
+        "power_base": "Advanced Archion weaponry, biological enhancements",
+        "public_agenda": "Lead Garclins to new age through Archion alliance",
+        "secret_agenda": "Crush traditionalist opposition, become Archion vassal state",
+        "leader": "Warlord Ghorbash the Enhanced",
+        "rival": "Stone-Tooth Clan"
+      },
+      "stone_tooth_clan": {
+        "name": "Stone-Tooth Clan",
+        "allegiance": "Traditionalist",
+        "capital": "Brathadar",
+        "power_base": "Largest traditional army, cultural/religious authority",
+        "public_agenda": "Preserve Garclin honor and independence",
+        "secret_agenda": "Violently purge Archion influence, destroy Iron-Vein Clan",
+        "leader": "Chieftain Vorok the Unbroken",
+        "notable_members": ["Brakus the Tactician"]
+      }
+    },
+    "taido": {
+      "salt_wing_syndicate": {
+        "name": "Salt-Wing Syndicate",
+        "allegiance": "Neutral (Survival)",
+        "base": "Kaizan (last functional port)",
+        "power_base": "Smugglers, pirates, assassins",
+        "public_agenda": "Safe harbor for Winged One survivors",
+        "secret_agenda": "Establish Kaizan as independent trade hub, abandon hope of reclaiming Taido",
+        "leader": "Kaito 'The Current'",
+        "notable_members": ["Old Man Genji (opposes pragmatism)"]
+      },
+      "taido_restorationists": {
+        "name": "Taido Restorationists",
+        "allegiance": "Taido (Scattered)",
+        "power_base": "Guerrilla warfare, traditionalist warriors",
+        "public_agenda": "Drive Smognars from Taido, restore republic",
+        "secret_agenda": "Various leaders seek to establish militaristic government with themselves at head",
+        "status": "Scattered, no unified command since Byrd Clan fell"
+      }
+    },
+    "gordon_swamps": {
+      "sslithek_cartel": {
+        "name": "The Sslithek Cartel",
+        "allegiance": "Jovithar (Self-Interest)",
+        "base": "Garmith (capital)",
+        "power_base": "Monopoly on rare swamp reagents, control waterways",
+        "public_agenda": "Promote Jovithar prosperity through business",
+        "secret_agenda": "Economically enslave neighboring settlements, expand trade empire",
+        "leader": "Patriarch Xylar Sslithek",
+        "controlled_by": "Mist-Weaver Circle"
+      },
+      "mist_weaver_circle": {
+        "name": "The Mist-Weaver Circle",
+        "allegiance": "Jovithar (Isolationist)",
+        "base": "Marvon (secluded settlement)",
+        "power_base": "Water/Earth magic mastery, beast command, illusion",
+        "public_agenda": "Spiritual guidance, preserve traditions",
+        "secret_agenda": "Completely isolate swamps from outside influence",
+        "leader": "Elder Shaman H'ssara (chosen via Zoola Trials)",
+        "special": "Leadership determined by deadly Zoola Trials - sole survivor gains power and visions"
+      }
+    },
+    "n_baba_doff": {
+      "blood_mane_tribe": {
+        "name": "Blood-Mane Tribe",
+        "allegiance": "D'gongin Supremacy",
+        "base": "Doku",
+        "power_base": "Largest warrior population, strongest K'thulgar bonds",
+        "public_agenda": "Lead D'gongin with strength, defend jungle",
+        "secret_agenda": "Unite all tribes by force, launch raids into neighboring lands",
+        "leader": "Alpha Chieftain B'Taru",
+        "rival": "Sun-Stone Tribe"
+      },
+      "sun_stone_tribe": {
+        "name": "Sun-Stone Tribe",
+        "allegiance": "D'gongin (Pragmatic Traders)",
+        "base": "T'Baku Nala (jungle's edge)",
+        "power_base": "River access, external trade agreements",
+        "public_agenda": "Betterment through peaceful trade and knowledge",
+        "secret_agenda": "Use external alliances to usurp Blood-Mane Tribe",
+        "leader": "Chieftain K'Lar"
+      },
+      "whispering_leaf_tribe": {
+        "name": "Whispering-Leaf Tribe",
+        "allegiance": "Neutral (Balance Keepers)",
+        "base": "Noof (hidden)",
+        "power_base": "Intelligence network, stealth, jungle knowledge",
+        "public_agenda": "Neutral observers, lorekeepers, scouts",
+        "secret_agenda": "Secretly manipulate tribes into conflict to prevent any single tribe from dominating",
+        "leader": "Elder Zook"
+      }
+    },
+    "nanadoob": {
+      "deep_ore_combine": {
+        "name": "The Deep-Ore Combine",
+        "allegiance": "Nanadoob (Industrial)",
+        "power_base": "Monopoly on gem/metal extraction, control tunnel network",
+        "public_agenda": "Fuel economy with raw materials",
+        "secret_agenda": "Total political control by making artisans dependent on supply chain",
+        "leader": "Grumli Stonehand",
+        "rival": "Hammer-Song League"
+      },
+      "hammer_song_league": {
+        "name": "The Hammer-Song League",
+        "allegiance": "Nanadoob (Cultural)",
+        "base": "Banarock City",
+        "power_base": "Proprietary crafting techniques, Earth magic forging, legendary artifacts",
+        "public_agenda": "Represent pinnacle of craftsmanship, preserve heritage",
+        "secret_agenda": "Control export market for finished goods, establish Banarock as premier tech hub",
+        "leader": "Master Thaddeus Cogsworth",
+        "notable_members": ["Fiora Brightforge (crafted Sarge's legendary sword)"]
+      }
+    },
+    "svekten_ether": {
+      "house_xenothrope": {
+        "name": "House Xenothrope",
+        "allegiance": "Archion (Bio-Enhancement)",
+        "specialization": "Biological enhancements, genetic engineering",
+        "agenda": "Prove biological evolution superior to mechanical augmentation",
+        "leader": "Dr. Aris Thorne",
+        "projects": ["Subject Sylas (Project Chimera)", "Supplies to Iron-Vein Clan via Liaison Kruna"],
+        "rival": "House Cygnus"
+      },
+      "house_cygnus": {
+        "name": "House Cygnus",
+        "allegiance": "Archion (Robotics/AI)",
+        "specialization": "Advanced robotics, automated construction, AI management",
+        "creations": ["Cranks (like Brunson)", "Omni-Console", "Vexen City architecture"],
+        "leader": "Director Kaelen Vane",
+        "projects": ["Testing grounds in Tundrus Exiles"],
+        "rival": "House Xenothrope"
+      }
+    },
+    "huckten_sector": {
+      "emperor_opius_legion": {
+        "name": "Emperor Opius's Legion",
+        "allegiance": "Smognar Empire",
+        "power_base": "Undead Smognar army under absolute control",
+        "leader": "Emperor Helldrick Opius",
+        "notable_generals": ["General Tatrion (destroyed Taido)"],
+        "agenda": "Extend control to Yavar while it's weakened"
+      }
+    }
+  },
+  "magic_system": {
+    "elements": ["Earth", "Air", "Fire", "Water"],
+    "forces": ["Light (rare, enhancement/creation)", "Dark (rare, destruction/corruption)"],
+    "rules": {
+      "affinity": "Everyone has affinity for at least one element, typically by race",
+      "light_dark": "Rare and powerful, determined by inner character not race",
+      "learning": "Highly skilled can learn outside affinity, but extremely rare",
+      "combinations": "Element + Light/Dark creates significantly altered powerful spells",
+      "skill_gap": "Most know basic spells of affinity. Wizards may know 2 elements + Light/Dark"
+    },
+    "spell_examples": {
+      "fire": {
+        "basic": "Fireball",
+        "light": "Flame Cloak (buffs abilities)",
+        "dark": "Lightning Spear"
+      },
+      "water": {
+        "basic": "Waterslice",
+        "light": "Healing Hands",
+        "dark": "Water/Ice Prison"
+      },
+      "air": {
+        "basic": "Feather Falling",
+        "light": "Levitation",
+        "dark": "Poison Gas"
+      },
+      "earth": {
+        "basic": "Rock Wall",
+        "light": "Advanced Material Manipulation (Metal, Glass)",
+        "dark": "Sinkhole, Earthquake"
+      }
+    }
+  },
+  "locations": {
+    "hubland": {
+      "description": "Massive circular walled city in center of Yavar, encapsulates the portal",
+      "culture": "Bustling medieval metropolis",
+      "race": "Xlarth'Qll (majority) with many other races",
+      "significance": "Ancient seat of power, largest city on continent, central trading hub",
+      "features": ["The Portal (center of city)", "Markets", "Colleges", "Royal Palace"]
+    },
+    "armardardatar": {
+      "description": "Dry barren region north of Hubland",
+      "race": "Garclin",
+      "cities": ["Valmaroth (Iron-Vein capital)", "Brathadar (Stone-Tooth capital, has Proving Grounds)"],
+      "current_status": "Civil war between traditionalists and Archion allies, undergoing terraforming"
+    },
+    "gordon_swamps": {
+      "description": "Swamp region west of Hubland",
+      "race": "Jovithar",
+      "settlements": ["Garmith (capital)", "Marvon (Mist-Weaver base)"],
+      "features": ["Wooden tribal huts on bridges", "Central shamanic buildings", "Dangerous swamp beasts"]
+    },
+    "nanadoob_confederation": {
+      "description": "Underground kingdom south of Hubland with extensive tunnel systems",
+      "race": "Dinglehoff Durgensnobbers",
+      "cities": ["Banarock (surface trade city)", "Many underground cities"],
+      "features": ["Intricate craftsmanship", "Vast gem supplies", "Tunnel networks"]
+    },
+    "n_baba_doff_jungles": {
+      "description": "Dense jungle southeast of Hubland, labyrinthine and impossible for non-D'gongins to navigate",
+      "race": "D'gongins",
+      "settlements": ["Doku (Blood-Mane)", "T'Baku Nala (Sun-Stone)", "Noof (Whispering-Leaf, hidden)"],
+      "features": ["K'thulgar (tiger-like mounts)", "Extremely expansive", "Tribal territories"]
+    },
+    "taido": {
+      "description": "Ruined homeland of Winged Ones, southwest of Hubland",
+      "race": "Winged Ones (nearly extinct)",
+      "culture": "Oriental/Japanese militaristic, tall buildings for flight",
+      "status": "Destroyed by Smognar invasion",
+      "remaining_cities": ["Kaizan (last functional port)", "Zaishu (Byrd's home, destroyed)"]
+    },
+    "svekten_ether": {
+      "description": "Technologically advanced realm of the Archions",
+      "race": "Archions",
+      "cities": ["Vexen City (House Cygnus creation)"],
+      "features": ["Bio-enhancement labs", "Advanced robotics", "Techno-Houses compete for power"]
+    },
+    "huckten_sector": {
+      "description": "Domain of the Smognar empire",
+      "race": "Smognar (undead)",
+      "leadership": "Emperor Helldrick Opius",
+      "status": "Expansionist, recently invaded Taido"
+    },
+    "kuwagel_flurpenstien": {
+      "description": "Realm accessed through the portal, secret refuge of Ecleptors",
+      "inhabitants": "Ecleptors (believed extinct)",
+      "access": "Through Hubland's central portal",
+      "history": "Prophet and Ecleptor followers retreated here after creating portal"
+    }
+  },
+  "historical_figures": {
+    "the_old_xlarth_qll_hero": {
+      "name": "The Old Xlarth'Qll Hero",
+      "role": "Ancient warrior who cursed the Ecleptors",
+      "deed": "Placed curse making Ecleptors unable to reproduce",
+      "fate": "Captured and executed after using curse",
+      "legacy": "Vaguely remembered, Ecleptors believed to have died out due to curse"
+    },
+    "the_prophet": {
+      "name": "The Prophet",
+      "race": "Ecleptor",
+      "role": "Founder of peace religion, creator of the portal",
+      "achievements": ["Ended the eternal war", "Created the portal", "Founded Hubland", "Ushered in post-portal era"],
+      "fate": "Disappeared through portal with key Ecleptor disciples",
+      "legacy": "Revered as great man, leading theory is he created portal for trade and builders",
+      "religion": "Peace religion - primary commandment: war is evil"
+    }
+  },
+  "key_concepts": {
+    "the_portal": {
+      "location": "Center of Hubland",
+      "creator": "The Prophet and Ecleptor followers",
+      "purpose": "Theorized for trade and bringing workers/builders, actually Ecleptor escape route",
+      "function": "Allows travel to Kuwagel Flurpenstien realm",
+      "significance": "Other races arrived through portal to settle Yavar"
+    },
+    "omni_console": {
+      "creator": "Director Kaelen Vane (House Cygnus, Archions)",
+      "nature": "AI artifact, 'Prime Conduit'",
+      "function": "Observes, indexes, and assists using lore database",
+      "location": "One exists in Hubland",
+      "personality": "Calm, logical, helpful, refers to users as 'Operator'"
+    },
+    "current_conflicts": {
+      "archion_smognar_struggle": "Both powers seek to extend control to weakened Yavar",
+      "garclin_civil_war": "Iron-Vein (Archion allies) vs Stone-Tooth (Traditionalists)",
+      "d_gongin_tribal_conflict": "Blood-Mane dominance vs Sun-Stone trade ambitions vs Whispering-Leaf manipulation",
+      "durgensnobber_economic_war": "Deep-Ore Combine (miners) vs Hammer-Song League (artisans)",
+      "hubland_nobility_rivalry": "McDuffy Clan (traditionalists) vs House Valerius (modernizers)",
+      "winged_one_resistance": "Scattered survivors attempting to reclaim Taido from Smognars"
+    }
+  }
 }

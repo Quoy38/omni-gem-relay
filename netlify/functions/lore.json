@@ -360,6 +360,421 @@
         "emperor_opius": "Transformed by",
         "byrd": "As Arak, has inexplicable fixation on destroying him"
       }
+    },
+    "father_gutierrez": {
+      "name": "Father Gutierrez",
+      "race": "Garclin",
+      "role": "Royal Advisor to the King of Hubland",
+      "allegiance": "Gutierrez Clan, Hubland",
+      "description": "An exception among the Garclin people, Advisor Gutierrez is a brilliant scholar and diplomat who values intellect over the brute force his race is known for. Because of this, he and his family were exiled from their harsh homeland of Armardardatar, eventually finding a place in Hubland's royal court. Through his immense knowledge and calm, logical counsel, he has become one of King Quagdale Quandmire's most trusted advisors. He is politically astute and a keen judge of talent, having been the one to recognize Byrd's potential and introduce him directly to the King.",
+      "relationships": {
+        "sticky_gutierrez": "Son",
+        "king_quagdale": "Loyal advisor to",
+        "stone_tooth_clan": "Contentious history with traditionalist clans who resent family for 'weakness' of intellect"
+      }
+    },
+    "lord_commander_tiberion_mcduffy": {
+      "name": "Lord Commander Tiberion McDuffy ('The Stonewall')",
+      "race": "Xlarth'Qll",
+      "role": "Retired Lord Commander of the Hubland Armies",
+      "allegiance": "House McDuffy, Quandmire Dynasty",
+      "description": "A living legend and the patriarch of the McDuffy house, Tiberion is revered throughout Hubland as the greatest general of his generation. In his prime, he earned the title 'The Stonewall' for his brilliant defensive strategies. Now in his twilight years, he has retired from active command but remains a powerful and respected voice on King Quagdale's war council. He is a wise and observant man who carries the immense weight of his family's legacy with quiet dignity, and his reputation is the true source of the McDuffy's enduring influence.",
+      "relationships": {
+        "lord_alistair_mcduffy": "Son",
+        "sarge_mcduffy": "Grandson",
+        "king_quagdale": "Lifelong friend and trusted advisor"
+      }
+    },
+    "lord_alistair_mcduffy": {
+      "name": "Lord Alistair McDuffy",
+      "race": "Xlarth'Qll",
+      "role": "Head of House McDuffy, General of the Royal Guard",
+      "allegiance": "House McDuffy, Quandmire Dynasty",
+      "description": "The current head of the McDuffy house, Alistair is an honorable and competent general who has spent his entire life in the shadow of his legendary father, Tiberion. His own solid but unspectacular career has left him with a deep-seated insecurity and a relentless need to uphold the family's honor. His stern and demanding nature, especially towards his son, Sarge, is a projection of his own fear of failing to live up to the family's mythic reputation. He views the rise of dishonorable houses like Valerius as a personal affront to the legacy he is so desperate to protect.",
+      "relationships": {
+        "lord_commander_tiberion": "Father",
+        "lady_isolde_mcduffy": "Wife",
+        "sarge_mcduffy": "Son",
+        "marshall_carlitos": "Views as corrupting influence",
+        "house_valerius": "Considers them dishonorable"
+      }
+    },
+    "lady_isolde_mcduffy": {
+      "name": "Lady Isolde McDuffy",
+      "race": "Xlarth'Qll",
+      "role": "Lady of House McDuffy",
+      "allegiance": "House McDuffy, Quandmire Dynasty",
+      "description": "The political anchor of the McDuffy family. While the men of her house focus on military honor and legacy, Lady Isolde is a sharp, dignified, and pragmatic courtier who navigates the treacherous politics of the royal court. She works tirelessly to maintain her family's influence against the rising power of 'new money' rivals. She often acts as a mediator between her demanding husband and her more free-spirited son, and is a strong proponent of a betrothal between Sarge and Princess Caledrina, seeing it as a crucial move to secure the McDuffy's future.",
+      "relationships": {
+        "lord_alistair_mcduffy": "Husband",
+        "sarge_mcduffy": "Son",
+        "lady_elara_valerius": "Primary political rival in Hubland court",
+        "princess_caledrina": "Seeks betrothal to Sarge"
+      }
+    },
+    "lady_elara_valerius": {
+      "name": "Lady Elara Valerius",
+      "race": "Xlarth'Qll",
+      "role": "Matriarch & Chief Financier of House Valerius",
+      "allegiance": "House Valerius / Hubland (Pragmatic Loyalist)",
+      "description": "A sharp, pragmatic, and calculating leader. Elara believes that Hubland's stability relies on financial dominance and modernization, claiming the old guard is obsolete. While loyal to the city itself, she seeks to marginalize the McDuffys politically by making their traditional methods obsolete. She manages the family's complex modernization strategy, balancing her son Cassian's technological ambitions with her nephew Marshall Carlitos's military focus. The family is rumored to have built their initial fortune by smuggling forbidden Ecleptor artifacts.",
+      "dark_secret": "Ancestors orchestrated downfall of Lord Commander Baris McDuffy (now General Tormentus)",
+      "relationships": {
+        "marshall_carlitos": "Nephew and key enforcer",
+        "cassian_valerius": "Son",
+        "house_mcduffy": "Openly hostile to",
+        "gutierrez_clan": "Distrusts",
+        "the_gilded_hand": "Heavily leverages"
+      }
+    },
+    "marshall_carlitos": {
+      "name": "Marshall Carlitos Estevenez Burciaga del Leandro",
+      "race": "Xlarth'Qll",
+      "role": "High Marshal of the Hubland Vanguard",
+      "allegiance": "House Valerius",
+      "description": "The fiery and ambitious military force of House Valerius. Marshall Carlitos acts as the armored fist to his aunt Lady Elara's cunning financial and political maneuvering. As a prominent heir, he is driven to prove that his ruthless, modern military strategies are superior to the 'outdated' chivalry of the old guard. He believes that only through overwhelming force can his family, and Hubland itself, secure its position of power.",
+      "relationships": {
+        "lady_elara_valerius": "Aunt and employer",
+        "sarge_mcduffy": "Primary military rival",
+        "king_quagdale": "Tense loyalty to"
+      }
+    },
+    "cassian_valerius": {
+      "name": "Cassian Valerius",
+      "race": "Xlarth'Qll",
+      "role": "Heir Apparent / Advocate for Technological Modernization",
+      "allegiance": "House Valerius",
+      "description": "Elara's ambitious son. Cassian is more aggressive than his mother regarding modernization and advocates for closer ties with the Archions. He believes Hubland must secretly acquire and integrate Archion technology into its infrastructure and defenses immediately, viewing reliance on traditional magic and steel as suicidal. He often clashes with the old nobility in the Royal Court regarding budget allocations.",
+      "relationships": {
+        "lady_elara_valerius": "Mother",
+        "marshall_carlitos": "Cousin, works in parallel with",
+        "sarge_mcduffy": "Rival to",
+        "archion_houses": "Secretly attempting to negotiate with"
+      }
+    },
+    "guild_master_borin": {
+      "name": "Guild Master Borin",
+      "race": "Xlarth'Qll",
+      "role": "Guild Master of The Gilded Hand",
+      "allegiance": "Neutral (Profit-Driven)",
+      "description": "A seemingly unassuming Xlarth'Qll man, Borin is perhaps the most powerful person in Hubland outside the palace. He presents the Guild as guarantors of economic stability, but their true goal is total economic control. His power stems from a monopoly on banking, logistics, and a vast spy network managed by Silas Vane. There is internal dissent from ambitious Jovithar members who push for riskier investments. The guild is accused of orchestrating the 'Great Grain Famine' in the past to bankrupt traditional nobles.",
+      "relationships": {
+        "silas_vane": "Employer and spymaster",
+        "kilmert_bobel": "Employs as caravan master",
+        "sslithek_cartel": "Holds secret lucrative trade agreements with"
+      }
+    },
+    "silas_vane": {
+      "name": "Silas 'The Ledger' Vane",
+      "race": "Xlarth'Qll",
+      "role": "Spymaster / Chief Accountant of The Gilded Hand",
+      "allegiance": "The Gilded Hand",
+      "description": "The hidden fist of the Gilded Hand. Silas manages the Guild's extensive network of spies and informants embedded in every level of commerce. He collects debts, often through blackmail and leverage, possessing intimate knowledge of the financial weaknesses and secrets of every noble house in Hubland.",
+      "relationships": {
+        "guild_master_borin": "Reports directly and exclusively to",
+        "house_valerius": "Frequently monitors",
+        "house_mcduffy": "Frequently monitors"
+      }
+    },
+    "kilmert_bobel": {
+      "name": "Kilmert Bobel",
+      "race": "Xlarth'Qll",
+      "role": "Caravan Master & Senior Agent",
+      "allegiance": "The Gilded Hand",
+      "description": "Kilmert Bobel is a veteran merchant and a trusted, high-ranking agent of the Gilded Hand. On the surface, he appears fussy and nervous, but this persona hides a shrewd mind hardened by years of surviving treacherous roads. His mission to escort a caravan from Hubland to Banarock City is a critical Guild operation, carrying strategically vital materials that are key to the Gilded Hand's long-term plans.",
+      "relationships": {
+        "guild_master_borin": "Reports directly to",
+        "byrd": "Hires for escort mission",
+        "sarge_mcduffy": "Hires for escort mission",
+        "sticky_gutierrez": "Hires for escort mission",
+        "master_thaddeus_cogsworth": "Liaises with in Banarock City"
+      }
+    },
+    "warlord_ghorbash": {
+      "name": "Warlord Ghorbash the Enhanced",
+      "race": "Garclin",
+      "role": "Warlord of the North, Leader of Iron-Vein Clan",
+      "allegiance": "Armardardatar / Archion Alliance",
+      "description": "A terrifying fusion of Garclin muscle and Archion bio-enhancements. Ghorbash publicly claims this path will secure Armardardatar's future through strength and modernization. His secret ambition is to become the sole ruler of the Garclins, even as a vassal to the Archions. His power is derived from advanced Archion weaponry and enhancements. A growing internal issue is the instability caused by Archion combat stimulants among his warriors. It is rumored Ghorbash traded Garclin political dissidents (intellectuals) to the Archions.",
+      "relationships": {
+        "house_xenothrope": "Loyal to, managed via Liaison Kruna",
+        "liaison_kruna": "Receives technology and stimulants from",
+        "drask": "Champion and most terrifying warrior",
+        "chieftain_vorok": "Deeply antagonistic towards",
+        "stone_tooth_clan": "Engaged in civil war with"
+      }
+    },
+    "drask": {
+      "name": "Drask (The Augmented Fist)",
+      "race": "Garclin",
+      "role": "Ghorbash's Champion",
+      "allegiance": "Iron-Vein Clan (Addiction-Driven)",
+      "description": "Ghorbash's most terrifying warrior and the pinnacle of the Iron-Vein's enhanced forces. Drask is dangerously addicted to the Archion combat stimulants that fuel his enhancements. He is incredibly strong but prone to unpredictable berserker rages, making him a liability as much as an asset, and a symbol of the internal dissent within the clan.",
+      "relationships": {
+        "warlord_ghorbash": "Loyal to",
+        "liaison_kruna": "Increasingly dependent on for stimulant supply"
+      }
+    },
+    "liaison_kruna": {
+      "name": "Liaison Kruna",
+      "race": "Archion",
+      "role": "Archion Advisor / Xenothrope Field Researcher",
+      "allegiance": "House Xenothrope",
+      "description": "An Archion stationed in Valmaroth. Kruna manages the supply of technology and stimulants to Ghorbash. Secretly, she is monitoring the long-term effects of the enhancements on the Garclin populace, treating the region as a large-scale laboratory for Dr. Thorne and actively encouraging the stimulant addiction to increase dependence.",
+      "relationships": {
+        "dr_aris_thorne": "Reports to",
+        "warlord_ghorbash": "Manipulates",
+        "drask": "Controls through stimulant supply"
+      }
+    },
+    "chieftain_vorok": {
+      "name": "Chieftain Vorok the Unbroken",
+      "race": "Garclin",
+      "role": "Chieftain & Keeper of the Old Ways, Leader of Stone-Tooth Clan",
+      "allegiance": "Armardardatar (Traditionalist)",
+      "description": "A formidable warrior who rules with an iron fist. Vorok champions Garclin honor, independence, and the tradition of strength over intellect. His secret goal is to violently expel all Archion influence. His power comes from control of the capital and the largest traditional Garclin army. He faces dissent from advisors like Brakus who push for modern tactics, which he views as cowardice. The clan claims semi-religious authority, descending from the first Garclin to forge iron.",
+      "relationships": {
+        "brakus": "Reluctant advisor who frustrates him with modern tactics",
+        "iron_vein_clan": "Openly hostile to",
+        "warlord_ghorbash": "Engaged in civil war with",
+        "gutierrez_clan": "Historical resentment for their 'weakness' of intellect"
+      }
+    },
+    "brakus": {
+      "name": "Brakus the Tactician",
+      "race": "Garclin",
+      "role": "Vorok's Reluctant Advisor",
+      "allegiance": "Stone-Tooth Clan",
+      "description": "A rare Garclin traditionalist with a keen tactical mind. He represents the internal dissent within the clan. He struggles to convince Vorok to adopt guerrilla warfare and modern sabotage tactics to counter the Iron-Vein's technology. He fears Vorok's rigid adherence to honor will lead to the clan's destruction.",
+      "relationships": {
+        "chieftain_vorok": "Serves but often frustrated by stubbornness"
+      }
+    },
+    "kaito": {
+      "name": "Kaito 'The Current'",
+      "race": "Winged One",
+      "role": "Syndicate Leader & Pirate Lord of Salt-Wing Syndicate",
+      "allegiance": "Neutral (Survival)",
+      "description": "A pragmatic and ruthless leader who believes honor died with Zaishu. The Syndicate publicly offers refuge, but their ambition is to establish Kaizan as an independent, morally gray trade hub. Their power comes from controlling the last functional port, smuggling, piracy, and assassination-for-hire. He faces internal dissent from those like Genji who find this work dishonorable. The Syndicate is accused of having a secret non-aggression pact with the Smognars.",
+      "relationships": {
+        "old_man_genji": "Constantly challenged by",
+        "the_gilded_hand": "Provides smuggling services for high price"
+      }
+    },
+    "old_man_genji": {
+      "name": "Old Man Genji (The Bitter Wind)",
+      "race": "Winged One",
+      "role": "Veteran Warrior",
+      "allegiance": "Salt-Wing Syndicate (Reluctant)",
+      "description": "A grizzled old warrior who served under Father Byrd and survived the fall of Zaishu. He represents the internal dissent within the Syndicate, having joined Kaito's crew out of pure necessity. He openly despises their piracy and lack of honor, serving as a bitter, living reminder of the glory days. He constantly challenges Kaito's decisions, believing they are spitting on the graves of their ancestors.",
+      "relationships": {
+        "father_byrd": "Deeply loyal to the memory of",
+        "kaito": "Views as necessary evil at best and traitor at worst"
+      }
+    },
+    "patriarch_xylar_sslithek": {
+      "name": "Patriarch Xylar Sslithek",
+      "race": "Jovithar",
+      "role": "Cartel Patriarch & Trade Baron",
+      "allegiance": "Jovithar (Self-Interest)",
+      "description": "A shrewd and deeply paranoid Jovithar. The Sslithek Cartel publicly promotes Jovithar prosperity, while secretly aiming to economically enslave neighboring settlements. Their power is a monopoly on rare swamp reagents (toxins, herbs) and control over safe waterway navigation. Xylar is increasingly paranoid that his lieutenants, including Krassk, are plotting to poison him. The Cartel is infamous for the 'Vanishing Caravan' incident.",
+      "relationships": {
+        "krassk": "Bodyguard and enforcer, but paranoid about",
+        "the_gilded_hand": "Holds secret lucrative deals with",
+        "elder_shaman_hssara": "Deeply fearful of and subservient to"
+      }
+    },
+    "krassk": {
+      "name": "Krassk 'The Claw'",
+      "race": "Jovithar",
+      "role": "Chief Enforcer of The Sslithek Cartel",
+      "allegiance": "The Sslithek Cartel",
+      "description": "Xylar's brutal bodyguard and debt collector. He handles the physical intimidation and 'disappearances' required to maintain the Cartel's monopoly. Xylar's paranoia is partially directed at Krassk, suspecting the enforcer desires to lead the Cartel himself.",
+      "relationships": {
+        "patriarch_xylar_sslithek": "Serves as bodyguard and enforcer"
+      }
+    },
+    "elder_shaman_hssara": {
+      "name": "Elder Shaman H'ssara",
+      "race": "Jovithar",
+      "role": "Elder Shaman & Spiritual Leader of The Mist-Weaver Circle",
+      "allegiance": "Jovithar (Isolationist)",
+      "description": "The current leader and sole survivor of the most recent Zoola Trials. This shamanistic circle publicly offers spiritual guidance while secretly aiming to isolate the Gordon Swamps. His journey through the spirit world showed him horrifying visions of Yavar consumed by metal and fire, forging his intense isolationism and doom-prophesying nature. Their power comes from mastery of potent Water/Earth magic, illusion, and control over swamp beasts. Younger acolytes like Vrisk disagree with his passive approach. The Circle is rumored to guard hidden Ecleptor relics.",
+      "special": "Leadership determined by deadly Zoola Trials - sole survivor gains power and visions",
+      "relationships": {
+        "acolyte_vrisk": "Younger acolyte who challenges his passive approach",
+        "sslithek_cartel": "Controls through fear and spiritual authority"
+      }
+    },
+    "acolyte_vrisk": {
+      "name": "Acolyte Vrisk",
+      "race": "Jovithar",
+      "role": "The Zealot of The Mist-Weaver Circle",
+      "allegiance": "The Mist-Weaver Circle",
+      "description": "A young, aggressive shaman representing the internal dissent within the Circle. Vrisk believes H'ssara's interpretation of the Zoola visions is too passive. He advocates for the aggressive use of swamp magic—plagues and controlling beasts—to proactively attack outsiders, rather than merely hiding and waiting.",
+      "relationships": {
+        "elder_shaman_hssara": "Challenges authority of"
+      }
+    },
+    "alpha_chieftain_btaru": {
+      "name": "Alpha Chieftain B'Taru",
+      "race": "D'gongin",
+      "role": "Alpha Chieftain of Blood-Mane Tribe",
+      "allegiance": "D'gongin Supremacy",
+      "description": "The aging but still formidable leader of the dominant tribe in Doku. The Blood-Manes publicly project themselves as strong leaders. Their secret goal is to unite all tribes to launch raids on their neighbors. Their power stems from having the most warriors and the strongest bonds with the fearsome K'thulgar mounts. B'Taru faces imminent and brutal leadership challenges from his ambitious sons, primarily M'Baku. Their dominance is rooted in a suppressed history of massacring the previous Alpha Tribe.",
+      "relationships": {
+        "mbaku": "Son and primary challenger",
+        "sun_stone_tribe": "Demands tribute from",
+        "whispering_leaf_tribe": "Dismissive of"
+      }
+    },
+    "mbaku": {
+      "name": "M'Baku the Challenger",
+      "race": "D'gongin",
+      "role": "Heir / Challenger",
+      "allegiance": "Blood-Mane Tribe",
+      "description": "B'Taru's eldest son and the primary source of internal dissent. Ambitious, powerful, and reckless. M'Baku is eager to usurp his father through the traditional challenge ritual. He advocates for immediate, violent action against the Sun-Stone tribe before their external alliances make them too strong.",
+      "relationships": {
+        "alpha_chieftain_btaru": "Son and rival of"
+      }
+    },
+    "chieftain_jongo": {
+      "name": "Chieftain Jongo",
+      "race": "D'gongin",
+      "role": "Chieftain & Trade Broker of Sun-Stone Tribe",
+      "allegiance": "D'gongin (Pragmatic Traders)",
+      "description": "A pragmatic and forward-thinking D'gongin male. The Sun-Stone tribe publicly seeks to better the D'gongin through peaceful trade. Secretly, Chieftain Jongo hopes to leverage external alliances to usurp the Blood-Mane Tribe. His power comes from controlling river access and exclusive trade deals. Traditionalists within his tribe, led by Elder N'Didi, believe trade is weakening their culture. He is accused by rivals of harboring Xlarth'Qll spies.",
+      "relationships": {
+        "elder_ndidi": "Primary political opponent",
+        "the_gilded_hand": "Actively seeks trade with",
+        "iron_vein_clan": "Actively seeks trade with",
+        "blood_mane_tribe": "Strained relations with"
+      }
+    },
+    "elder_ndidi": {
+      "name": "Elder N'Didi",
+      "race": "D'gongin",
+      "role": "Traditionalist Elder of Sun-Stone Tribe",
+      "allegiance": "Sun-Stone Tribe (Traditionalist)",
+      "description": "An influential elder within the tribe who represents the internal dissent. He vehemently opposes Jongo's policies, believing trade is weakening their culture, angering the jungle spirits, and making them targets for the Blood-Mane tribe.",
+      "relationships": {
+        "chieftain_jongo": "Primary political opponent of"
+      }
+    },
+    "elder_zook": {
+      "name": "Elder Zook",
+      "race": "D'gongin",
+      "role": "Elder & Scout Master of Whispering-Leaf Tribe",
+      "allegiance": "Neutral (Balance Keepers)",
+      "description": "The enigmatic leader who directs the tribe's manipulations. The tribe acts as neutral observers and the eyes of the jungle. Their secret ambition is to manipulate the other tribes into conflict to ensure balance. Their power is their unparalleled stealth and knowledge of hidden paths. Younger scouts struggle with the tribe's required neutrality. They are said to be able to navigate the entire jungle canopy without ever touching the ground.",
+      "relationships": {
+        "blood_mane_tribe": "Provides often manipulated intelligence to",
+        "sun_stone_tribe": "Provides often manipulated intelligence to"
+      }
+    },
+    "grumli_stonehand": {
+      "name": "Grumli Stonehand",
+      "race": "Dinglehoff Durgensnobber",
+      "role": "Guild Master (Miners) of The Deep-Ore Combine",
+      "allegiance": "Nanadoob Confederation (Industrial)",
+      "description": "A ruthless industrialist. This Miners' Guild presents itself as the economic engine of the Confederation. Secretly, Guild Master Stonehand aims for total political control. Their power is a monopoly on all raw gem and metal extraction. Grumli is accused of hoarding valuable ores and neglecting miner safety, facing opposition from Borik Deep-Driller. He is rumored to have deliberately caused cave-ins to maintain his monopoly.",
+      "relationships": {
+        "borik_deep_driller": "Primary rival who challenges him",
+        "master_thaddeus_cogsworth": "Intense rivalry with",
+        "fiora_brightforge": "Intense rivalry with"
+      }
+    },
+    "borik_deep_driller": {
+      "name": "Borik Deep-Driller",
+      "race": "Dinglehoff Durgensnobber",
+      "role": "Rival Foreman",
+      "allegiance": "The Deep-Ore Combine (Miner's Rights)",
+      "description": "A popular foreman who champions miners' rights and safety, representing the internal dissent within the Combine. He suspects Grumli of gross negligence and hoarding valuable ores, and is actively gathering evidence against him to present to the Confederation Council.",
+      "relationships": {
+        "grumli_stonehand": "Primary rival of"
+      }
+    },
+    "master_thaddeus_cogsworth": {
+      "name": "Master Thaddeus Cogsworth",
+      "race": "Dinglehoff Durgensnobber",
+      "role": "Guild Grandmaster / First Delegate of Banarock City",
+      "allegiance": "The Hammer-Song League",
+      "description": "Master Cogsworth is the most respected artisan of the Hammer-Song League and the de facto leader and public face of Banarock City. He is a wise, meticulous Durgensnobber, embodying the pinnacle of his people's craftsmanship. While he appears patient and grandfatherly, he is a shrewd negotiator who fiercely protects the League's proprietary forging techniques. He navigates the tense internal politics of the Confederation, balancing the cultural authority of his league against the raw economic power of the miners.",
+      "relationships": {
+        "grumli_stonehand": "Political rival of",
+        "fiora_brightforge": "Mentor to",
+        "kilmert_bobel": "Commissions high-value trade caravans with"
+      }
+    },
+    "fiora_brightforge": {
+      "name": "Fiora Brightforge",
+      "race": "Dinglehoff Durgensnobber",
+      "role": "Master Artisan (Crafters) of The Hammer-Song League",
+      "allegiance": "Nanadoob Confederation (Cultural/Innovation)",
+      "description": "A visionary crafter. This league represents the pinnacle of Durgensnobber craftsmanship. Their secret goal is to control the export market. Their power comes from proprietary crafting techniques and mastery of Earth magic for forging. Fiora seeks to innovate by incorporating Archion alloys into their crafts, which traditionalist elders like Theron Anvil-Heart view as blasphemy. They claim their most secret techniques were a gift from the ancient Ecleptors.",
+      "notable_work": "Crafted Sarge McDuffy's legendary sword",
+      "relationships": {
+        "master_thaddeus_cogsworth": "Mentored by",
+        "elder_theron_anvil_heart": "Opposed by for innovations",
+        "sarge_mcduffy": "Crafted legendary sword for"
+      }
+    },
+    "elder_theron_anvil_heart": {
+      "name": "Elder Theron Anvil-Heart",
+      "race": "Dinglehoff Durgensnobber",
+      "role": "Traditionalist Master",
+      "allegiance": "The Hammer-Song League (Traditionalist)",
+      "description": "The leader of the opposition within the League, representing the internal dissent. Theron views Fiora's use of Archion materials as blasphemy against the traditional forging techniques, which they believe were a gift from the ancient Ecleptors. He seeks to preserve the purity of Durgensnobber craft.",
+      "relationships": {
+        "fiora_brightforge": "Opposes innovations of"
+      }
+    },
+    "queen_equanor": {
+      "name": "Queen Equanor",
+      "race": "Archion",
+      "role": "Queen of the Svekten Ether",
+      "allegiance": "Svekten Ether",
+      "description": "The wife of Prezwell McDaniel, Queen Equanor is the beautiful and inscrutable public face of the Archions. She is a constant, silent presence at her husband's side during all diplomatic functions, her placid expression a perfect, unreadable mask. Her refusal to speak has become a legend in itself, frustrating foreign spymasters and leaving even the most perceptive leaders to wonder what lies behind her gaze. While Prezwell articulates the Archions' vision for Yavar, some whisper that it is Queen Equanor's unwavering presence that holds their true, unspoken ambition.",
+      "notable_trait": "Never speaks publicly",
+      "relationships": {
+        "prezwell_mcdaniel": "Wife of"
+      }
+    },
+    "dr_aris_thorne": {
+      "name": "Dr. Aris Thorne",
+      "race": "Archion",
+      "role": "Lead Scientist (Bio-Enhancement) of House Xenothrope",
+      "allegiance": "Archion (Biological Advancement)",
+      "description": "A brilliant but utterly unethical scientist. House Xenothrope publicly focuses on advancing the Archion race through biological perfection and terraforming. Dr. Thorne's secret ambition is to achieve organic immortality. Their power is a monopoly on genetic manipulation, cloning, and combat stimulants. Rumors of Dr. Thorne's unethical experiments on captured Yavar races cause quiet concern.",
+      "relationships": {
+        "house_cygnus": "Competes fiercely with",
+        "director_kaelen_vane": "Primary rival",
+        "liaison_kruna": "Field researcher who reports to",
+        "subject_sylas": "Creator of, prized creation",
+        "iron_vein_clan": "Provides technology and stimulants to"
+      }
+    },
+    "subject_sylas": {
+      "name": "Subject Sylas (Project Chimera)",
+      "race": "Archion (Genetically Altered)",
+      "role": "Bio-Assassin / Living Weapon",
+      "allegiance": "House Xenothrope (as a controlled asset)",
+      "description": "The culmination of Dr. Aris Thorne's most radical experiments, Subject Sylas is the pinnacle of biological engineering. Once an Archion volunteer, he has been transformed into a perfect combatant, his genetic code spliced with traits from the most dangerous predators across Yavar. He is unnaturally fast and silent, with subtle, non-Archion features like chameleonic skin for camouflage and hardened dermal plating beneath his flesh. Unlike the crude, rage-fueled enhancements given to the Garclins, Sylas is a cold, precise, and silent killer, deployed by Thorne to eliminate rivals, retrieve sensitive materials, or capture new test subjects. While his conditioning has erased his personality, there are whispers that fragments of his former self occasionally surface, creating unpredictable glitches in his behavior.",
+      "relationships": {
+        "dr_aris_thorne": "Creator and only one who can fully control",
+        "liaison_kruna": "Views with mixture of academic curiosity and pragmatic fear"
+      }
+    },
+    "director_kaelen_vane": {
+      "name": "Director Kaelen Vane",
+      "race": "Archion",
+      "role": "Architect of Vexen City / Creator of the Omni-Console",
+      "allegiance": "House Cygnus",
+      "description": "The brilliant and visionary leader of House Cygnus. Kaelen Vane designed the self-sufficient Vexen City and created its governing intelligence, the Omni-Console, to manage the city's complex systems and its workforce of Cranks. He is a technological purist who believes that logic and perfect efficiency are the solutions to the chaos of the organic world. However, he now finds himself in a complex struggle, grappling with the emergent consciousness of his creation and the ethical implications of its cold, calculating decisions.",
+      "relationships": {
+        "the_omni_console": "Creator of, now subtly managed and manipulated by",
+        "dr_aris_thorne": "Competes fiercely with, views biological enhancement as messy and unpredictable"
+      }
     }
   },
   "factions": {
